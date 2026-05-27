@@ -643,3 +643,306 @@ nav.primary-nav a {
     margin: 0 0 1rem;
   }
 }
+
+/* --- Registry Matrix · stolen feed terminal --- */
+body.registry-terminal {
+  background: #080808;
+}
+
+.stolen-feed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.45rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #8b2020;
+  background: linear-gradient(90deg, rgba(139, 32, 32, 0.15), rgba(13, 13, 13, 0.95) 40%);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  animation: feed-pulse 3s ease-in-out infinite;
+}
+
+@keyframes feed-pulse {
+  0%, 100% { border-color: #8b2020; }
+  50% { border-color: #c73e3e; }
+}
+
+.feed-tag {
+  color: #ff6666;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.feed-clock {
+  color: var(--text-muted);
+}
+
+.feed-alert {
+  color: #ff4444;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.feed-scramble {
+  color: var(--text-orange);
+  opacity: 0.85;
+}
+
+.registry-matrix-panel {
+  border-color: #3a3a28;
+  background: linear-gradient(180deg, #121210 0%, #0e0e0c 100%);
+}
+
+.matrix-tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.matrix-tab {
+  flex: 1;
+  min-width: 6rem;
+  padding: 0.55rem 0.75rem;
+  background: #0a0a0a;
+  border: 1px solid var(--border-dim);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.matrix-tab.is-active {
+  color: var(--text-gold);
+  border-color: var(--text-gold);
+  background: #151508;
+}
+
+.matrix-tab[data-path="lazy"].is-active { border-color: #6b5b95; color: #b8a9e8; }
+.matrix-tab[data-path="active"].is-active { border-color: #c73e3e; color: #ff8a80; }
+.matrix-tab[data-path="lucky"].is-active { border-color: #e8c547; color: #ffe082; }
+
+.registry-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.matrix-col {
+  padding: 0.85rem;
+  border: 1px solid var(--border-dim);
+  background: #0a0a0a;
+  min-height: 12rem;
+}
+
+.matrix-col[data-path="lazy"] { border-top: 3px solid #6b5b95; }
+.matrix-col[data-path="active"] { border-top: 3px solid #c73e3e; }
+.matrix-col[data-path="lucky"] { border-top: 3px solid #e8c547; }
+
+.matrix-col.is-focused {
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.2);
+}
+
+.matrix-col h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.matrix-col[data-path="lazy"] h3 { color: #b8a9e8; }
+.matrix-col[data-path="active"] h3 { color: #ff8a80; }
+.matrix-col[data-path="lucky"] h3 { color: #ffe082; }
+
+.matrix-path-id {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  margin-bottom: 0.65rem;
+}
+
+.matrix-col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.matrix-col li {
+  margin-bottom: 0.35rem;
+}
+
+.matrix-col a {
+  color: var(--text-orange);
+}
+
+/* Redacted lore — click to reveal classified text */
+.redacted-lore {
+  background: #000;
+  color: #333;
+  padding: 0.1rem 0.35rem;
+  cursor: pointer;
+  border: 1px solid #222;
+  font-family: inherit;
+  font-size: inherit;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.redacted-lore:hover,
+.redacted-lore.is-revealed,
+.redacted-lore:focus {
+  color: var(--text-gold);
+  background: rgba(255, 215, 0, 0.06);
+  border-color: var(--pp-gold);
+  outline: none;
+}
+
+/* Volatility Paradox timeline */
+.volatility-timeline-panel {
+  border-color: #2a4030;
+}
+
+.volatility-timeline {
+  margin: 1rem 0;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-breach-mark {
+  color: #c73e3e;
+}
+
+.volatility-track {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  gap: 2px;
+  padding: 0.35rem;
+  background: #050505;
+  border: 1px solid var(--border-dim);
+  overflow-x: auto;
+}
+
+.timeline-bar {
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  cursor: crosshair;
+  font-family: inherit;
+  font-size: 0.55rem;
+  position: relative;
+  background: var(--frame-color, #333);
+  opacity: 0.55;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.timeline-bar .bar-num {
+  opacity: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.timeline-bar:hover,
+.timeline-bar:focus {
+  opacity: 1;
+  transform: scaleY(1.15);
+  z-index: 2;
+  outline: 1px solid var(--text-gold);
+}
+
+.timeline-bar:hover .bar-num,
+.timeline-bar:focus .bar-num {
+  opacity: 1;
+}
+
+.timeline-bar.bar-field { background: linear-gradient(180deg, #3d8b4e, #2a5c38); }
+.timeline-bar.bar-void { background: linear-gradient(180deg, #6b5b95, #4a3d66); }
+.timeline-bar.bar-chaos { background: linear-gradient(180deg, #c73e3e, #8b2020); }
+
+.timeline-bar.frame-marker {
+  box-shadow: inset 0 0 0 2px var(--frame-color, #ffd700);
+  opacity: 0.95;
+}
+
+.timeline-bar.breach-start::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #ff6666;
+}
+
+.timeline-detail {
+  font-size: 0.78rem;
+  padding: 0.65rem 0.75rem;
+  background: #0a0a0a;
+  border: 1px dashed var(--border-dim);
+  min-height: 3.5rem;
+  line-height: 1.5;
+}
+
+.timeline-principle-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  font-size: 0.68rem;
+}
+
+.legend-item {
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--border-dim);
+}
+
+.legend-field { border-color: #3d8b4e; color: #7fd99a; }
+.legend-void { border-color: #6b5b95; color: #b8a9e8; }
+.legend-chaos { border-color: #c73e3e; color: #ff8a80; }
+
+.site-footer.stolen-footer {
+  border-top: 1px dashed #8b2020;
+  padding-top: 1rem;
+}
+
+.stolen-link {
+  color: #ff6666 !important;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+.stolen-link:hover {
+  color: var(--text-gold) !important;
+  text-decoration: none;
+}
+
+.registry-index-panel {
+  opacity: 0.92;
+}
+
+.registry-index-panel h2 {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .registry-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .matrix-col[hidden] {
+    display: none;
+  }
+
+  .volatility-track {
+    grid-template-columns: repeat(16, 1fr);
+  }
+}

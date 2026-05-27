@@ -3,262 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Object Registry | DGY Wiki</title>
+  <title>Registry Matrix | DGY Wiki · STOLEN FEED</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="crt">
+<body class="crt registry-terminal">
   <div class="wrap wide crt-flicker">
+    <div class="stolen-feed" aria-live="polite">
+      <span class="feed-tag">◆ Stolen Feed · REGISTRY-MATRIX-UI</span>
+      <span class="feed-clock mono" id="feed-clock">—</span>
+      <span class="feed-scramble mono">SRC: containment/███/mirror/404</span>
+      <span class="feed-alert">Unauthorized mirror · clearance not verified</span>
+    </div>
+
     <header class="site-header">
-      <h1>Object Registry</h1>
-      <p class="subtitle">Anomalies · Systems · Composer Tapes · PP Tags</p>
+      <h1>Registry Matrix</h1>
+      <p class="subtitle">Lazy · Active · Lucky · Volatility Paradox Telemetry</p>
     </header>
 
     <nav class="primary-nav" data-auto-nav aria-label="Site sections"></nav>
 
-    <p class="classification">INDEX · SORTABLE BY PRINCIPLE</p>
+    <p class="classification">INTERCEPTED · PATH-CLASSIFIED INDEX</p>
 
-    <section class="panel">
+    <section class="panel registry-matrix-panel">
+      <h2>Registry Matrix UI</h2>
       <p class="article-lead">
-        Catalog of named entities in the Darglarking Yellow containment universe—analogous to
-        an SCP Series list crossed with a fandom wiki category page. Click through for dossiers,
-        doctrine, and ingest tiers.
+        Breach protocol paths from <span class="mono">NoemaranArena</span> — each column routes
+        registry entries by player framing. Lore strings marked
+        <span class="redacted-lore" data-reveal="Click redacted blocks in each path column to decode classified lore." data-mask="[REDACTED LORE BLOCK]">[REDACTED LORE BLOCK]</span>
+        require terminal clearance.
       </p>
-      <div class="tag-cloud">
-        <a href="#anomalies">Anomalies</a>
-        <a href="#systems">Godot Systems</a>
-        <a href="#tapes">Four Tapes</a>
-        <a href="#pp-tags">PP Tags</a>
-        <a href="#subjects">Personnel / Subjects</a>
-        <a href="#games">Member Projects</a>
+
+      <div class="matrix-tabs" role="tablist" aria-label="Path columns">
+        <button type="button" class="matrix-tab is-active" data-path="lazy" role="tab" aria-selected="true">Lazy</button>
+        <button type="button" class="matrix-tab" data-path="active" role="tab" aria-selected="false">Active</button>
+        <button type="button" class="matrix-tab" data-path="lucky" role="tab" aria-selected="false">Lucky</button>
+      </div>
+
+      <div class="registry-matrix">
+        <div class="matrix-col" data-path="lazy">
+          <h3>Lazy Path</h3>
+          <p class="matrix-path-id mono">NULL / VOID · NullDrift protocol</p>
+          <p>
+            <span class="redacted-lore" data-reveal="Null Prevention carried you through. The wall gave way while you watched."></span>
+          </p>
+          <ul>
+            <li><span class="mono">DGY-004</span> — Null Stasis Trap · <a href="findings.html">PP-NULL-PREV</a></li>
+            <li><span class="mono">NullDrift.gd</span> — essence accumulation minigame</li>
+            <li><span class="mono">SaveManager.gd</span> — recovery shelf · pathway-back</li>
+            <li><span class="mono">NullPreventionMonitor</span> — 90s stasis sentinel</li>
+            <li>VOID bars 17–24 · karma ghost lane</li>
+            <li><span class="mono">LOOP-404</span> — <a href="archive.html">Corrupted Archive</a></li>
+            <li>Tape 4 · <span class="badge badge-null">NULL</span> prevention</li>
+          </ul>
+          <p class="source-tag">Principle: intentional vacuum → sentinel recovery</p>
+        </div>
+
+        <div class="matrix-col" data-path="active">
+          <h3>Active Path</h3>
+          <p class="matrix-path-id mono">CHAOS · DeshretSiege protocol</p>
+          <p>
+            <span class="redacted-lore" data-reveal="You hammered the karma wall until Deshret had no choice to move."></span>
+          </p>
+          <ul>
+            <li><span class="mono">DGY-003</span> — Storm Cycle · <a href="doctrine.html#storm-cycle">Doctrine § II</a></li>
+            <li><span class="mono">DeshretSiege.gd</span> — wall breach restore hook</li>
+            <li><span class="mono">ClickMatrix.gd</span> — overclock 60s @ mult ≥ 8</li>
+            <li><span class="mono">ChitonGrid.gd</span> → Dragonfly @ bar 5</li>
+            <li>130 BPM Volatility Paradox playback</li>
+            <li>Tape 2 · <span class="badge badge-chaos">CHAOS</span></li>
+            <li><span class="mono">StatDisplay.gd</span> — RTD run telemetry</li>
+          </ul>
+          <p class="source-tag">Principle: entropy challenging Field stability</p>
+        </div>
+
+        <div class="matrix-col" data-path="lucky">
+          <h3>Lucky Path</h3>
+          <p class="matrix-path-id mono">CHAOS · ChaosReel protocol</p>
+          <p>
+            <span class="redacted-lore" data-reveal="Luck bent the protocol before friction finished its sentence."></span>
+          </p>
+          <ul>
+            <li><span class="mono">ChaosReel.gd</span> — triple-luck minigame</li>
+            <li><span class="mono">ClickMatrix</span> — milestone bursts · sweet zone</li>
+            <li>Polymetric drift · bars 25–32</li>
+            <li>Dragonfly cadence · <span class="mono">miku-miku-oo-ee-oo</span></li>
+            <li><span class="mono">DGY-███</span> — <a href="dossier.html">primary vector</a></li>
+            <li>Luck glitch channel (ch 6)</li>
+            <li>Fortune Compass · guided route HUD</li>
+          </ul>
+          <p class="source-tag">Principle: Contrast Engine fuel</p>
+        </div>
       </div>
     </section>
 
-    <section class="panel" id="anomalies">
-      <h2>Primary Anomalies</h2>
+    <section class="panel volatility-timeline-panel">
+      <h2>Volatility Paradox · Audio Timeline</h2>
+      <p>
+        TypeScript timeline module (<span class="mono">js/audio-timeline.ts</span>) synced with
+        <span class="mono">src/hooks/useAudioTimeline.ts</span>. Bars 1–16 FIELD · 17–24 VOID · 25–32 CHAOS.
+        Frame markers highlight conductor handoffs.
+      </p>
+      <div id="volatility-timeline" class="volatility-timeline"></div>
+      <p>
+        <span class="secret-highlight">Calm before breach: Chiton 90 BPM through bar 4; Dragonfly spin-up at bar 5.</span>
+      </p>
+    </section>
+
+    <section class="panel registry-index-panel" id="anomalies">
+      <h2>Full Registry Index</h2>
+      <div class="tag-cloud">
+        <a href="#anomalies-table">Anomalies</a>
+        <a href="#systems">Systems</a>
+        <a href="#tapes">Tapes</a>
+        <a href="#pp-tags">PP Tags</a>
+        <a href="#games">Games</a>
+      </div>
+
+      <h3 id="anomalies-table" style="font-size:0.85rem;color:var(--text-orange);margin-top:1rem;">Primary Anomalies</h3>
       <table class="registry-table">
         <thead>
-          <tr><th>ID</th><th>Name</th><th>Class</th><th>Principle</th><th>File</th></tr>
+          <tr><th>ID</th><th>Name</th><th>Path</th><th>Principle</th><th>File</th></tr>
         </thead>
         <tbody>
           <tr>
             <td class="mono">DGY-███</td>
             <td>The Darglarking Yellow</td>
-            <td><span class="badge badge-euclid">Euclid</span></td>
-            <td><span class="badge badge-field">FIELD</span> (manifestation)</td>
+            <td><span class="badge badge-chaos">Lucky</span></td>
+            <td><span class="badge badge-field">FIELD</span></td>
             <td><a href="dossier.html">Dossier</a></td>
           </tr>
           <tr>
             <td class="mono">DGY-002</td>
-            <td>Financial: Yellow (dual hex phenomenon)</td>
-            <td><span class="badge badge-euclid">Euclid</span></td>
+            <td>Financial: Yellow</td>
+            <td>—</td>
             <td><span class="badge badge-field">FIELD</span></td>
             <td><a href="findings.html">PP-FIN-YLW</a></td>
           </tr>
           <tr>
             <td class="mono">DGY-003</td>
-            <td>Storm Cycle Memetic (came / went)</td>
-            <td><span class="badge badge-keter">Keter</span> (narrative)</td>
+            <td>Storm Cycle Memetic</td>
+            <td><span class="badge badge-chaos">Active</span></td>
             <td><span class="badge badge-chaos">CHAOS</span></td>
-            <td><a href="doctrine.html#storm-cycle">Doctrine § II</a></td>
+            <td><a href="doctrine.html#storm-cycle">Doctrine</a></td>
           </tr>
           <tr>
             <td class="mono">DGY-004</td>
             <td>Null Stasis Trap</td>
-            <td><span class="badge badge-keter">Keter</span></td>
+            <td><span class="badge badge-void">Lazy</span></td>
             <td><span class="badge badge-null">NULL</span></td>
             <td><a href="findings.html">PP-NULL-PREV</a></td>
           </tr>
           <tr>
             <td class="mono">DGY-005</td>
-            <td>Karma Ghost Lane (bars 17–24)</td>
-            <td><span class="badge badge-safe">Safe</span> (if gated)</td>
+            <td>Karma Ghost Lane</td>
+            <td><span class="badge badge-void">Lazy</span></td>
             <td><span class="badge badge-void">VOID</span></td>
-            <td><a href="principles.html#void">VOID article</a></td>
+            <td><a href="principles.html#void">VOID</a></td>
           </tr>
           <tr>
             <td class="mono">LOOP-404</td>
             <td>Corrupted Archive Routing</td>
-            <td><span class="badge badge-euclid">Euclid</span></td>
+            <td><span class="badge badge-void">Lazy</span></td>
             <td><span class="badge badge-void">VOID</span></td>
             <td><a href="archive.html">Archive</a></td>
           </tr>
         </tbody>
       </table>
-    </section>
 
-    <section class="panel" id="systems">
-      <h2>Godot Systems (Implementation Registry)</h2>
+      <h3 id="systems" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">Godot Systems</h3>
       <table class="registry-table">
         <thead>
-          <tr><th>Artifact</th><th>Principle</th><th>Hub</th><th>Status</th></tr>
+          <tr><th>Artifact</th><th>Path</th><th>Principle</th><th>Status</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="mono">ChitonGrid.gd</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>Noemaran</td>
-            <td>implemented · 90 BPM calm clock</td>
-          </tr>
-          <tr>
-            <td class="mono">ClickMatrix.gd</td>
-            <td><span class="badge badge-chaos">CHAOS</span></td>
-            <td>Noemaran + legacy mirror</td>
-            <td>implemented · overclock hook</td>
-          </tr>
-          <tr>
-            <td class="mono">StatDisplay.gd</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>References / RTD</td>
-            <td>implemented</td>
-          </tr>
-          <tr>
-            <td class="mono">ElementAffinityValidator.gd</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>Noemaran + Elemenko</td>
-            <td>implemented · 8-element matrix</td>
-          </tr>
-          <tr>
-            <td class="mono">SaveManager.gd</td>
-            <td><span class="badge badge-null">NULL</span></td>
-            <td>shared autoload</td>
-            <td>implemented · recovery shelf</td>
-          </tr>
-          <tr>
-            <td class="mono">NullPreventionMonitor.gd</td>
-            <td><span class="badge badge-null">NULL</span></td>
-            <td>Noemaran</td>
-            <td>implemented · pathway-back</td>
-          </tr>
-          <tr>
-            <td class="mono">NoemaranAudioTimelineDirector.gd</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>Noemaran</td>
-            <td>implemented · frame sync</td>
-          </tr>
-          <tr>
-            <td class="mono">DarglarkingLsbStego.gd</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>shared</td>
-            <td>implemented · DGY1 payloads</td>
-          </tr>
+          <tr><td class="mono">ChitonGrid.gd</td><td>Active</td><td><span class="badge badge-field">FIELD</span></td><td>90 BPM calm clock</td></tr>
+          <tr><td class="mono">ClickMatrix.gd</td><td>Lucky</td><td><span class="badge badge-chaos">CHAOS</span></td><td>overclock hook</td></tr>
+          <tr><td class="mono">SaveManager.gd</td><td>Lazy</td><td><span class="badge badge-null">NULL</span></td><td>recovery shelf</td></tr>
+          <tr><td class="mono">NullPreventionMonitor.gd</td><td>Lazy</td><td><span class="badge badge-null">NULL</span></td><td>pathway-back</td></tr>
+          <tr><td class="mono">ElementAffinityValidator.gd</td><td>Active</td><td><span class="badge badge-field">FIELD</span></td><td>8-element matrix</td></tr>
+          <tr><td class="mono">NoemaranAudioTimelineDirector.gd</td><td>—</td><td><span class="badge badge-field">FIELD</span></td><td>frame sync</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="tapes" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">Four-Tape Pipeline</h3>
+      <table class="registry-table">
+        <thead>
+          <tr><th>Tape</th><th>Principle</th><th>Artifact</th><th>Path lean</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><span class="badge badge-field">FIELD</span></td><td class="mono">StatDisplay.gd</td><td>Active</td></tr>
+          <tr><td>2</td><td><span class="badge badge-chaos">CHAOS</span></td><td class="mono">ClickMatrix.gd</td><td>Lucky</td></tr>
+          <tr><td>3</td><td><span class="badge badge-field">FIELD</span></td><td class="mono">ElementAffinityValidator.gd</td><td>Active</td></tr>
+          <tr><td>4</td><td><span class="badge badge-null">NULL</span></td><td class="mono">SaveManager.gd</td><td>Lazy</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="pp-tags" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">PP-INGEST Tags</h3>
+      <table class="registry-table">
+        <thead><tr><th>Tag</th><th>Topic</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">PP-FOUR-PRINCIPLE</td><td>FIELD / VOID / CHAOS / NULL</td></tr>
+          <tr><td class="mono">PP-NULL-PREV</td><td>Pathway-back monitor (Lazy)</td></tr>
+          <tr><td class="mono">PP-STORM-CYCLE</td><td>came / went (Active)</td></tr>
+          <tr><td class="mono">PP-CHITON-90</td><td>Mineral lens @ 90 BPM</td></tr>
+        </tbody>
+      </table>
+      <p><a href="findings.html">Full PP-INGEST findings →</a></p>
+
+      <h3 id="games" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">Member Projects</h3>
+      <table class="registry-table">
+        <thead><tr><th>Title</th><th>Path</th><th>Protocol game</th></tr></thead>
+        <tbody>
+          <tr><td>Null Drift</td><td>Lazy</td><td>essence / stasis</td></tr>
+          <tr><td>Deshret Siege</td><td>Active</td><td>wall breach</td></tr>
+          <tr><td>Chaos Reel</td><td>Lucky</td><td>fortune reels</td></tr>
+          <tr><td>AccuclickerVault</td><td>Lucky</td><td>ClickMatrix</td></tr>
+          <tr><td>PinfallCrucible</td><td>Active</td><td>8-element matrix</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="panel" id="tapes">
-      <h2>Four-Tape Pipeline (Composer Vectors)</h2>
-      <p class="source-tag">Secondary layer under principles · warranty-deed-crosswalk.md</p>
-      <table class="registry-table">
-        <thead>
-          <tr><th>Tape</th><th>Principle</th><th>Label</th><th>Artifact</th><th>Status</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>Rouge Tile Defense run telemetry</td>
-            <td class="mono">StatDisplay.gd</td>
-            <td>implemented</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td><span class="badge badge-chaos">CHAOS</span></td>
-            <td>Accuclicker click milestones</td>
-            <td class="mono">ClickMatrix.gd</td>
-            <td>implemented + legacy mirror</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><span class="badge badge-field">FIELD</span></td>
-            <td>Elemenko 8-element affinity</td>
-            <td class="mono">ElementAffinityValidator.gd</td>
-            <td>implemented</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td><span class="badge badge-null">NULL</span></td>
-            <td>Safe recovery + Null Prevention</td>
-            <td class="mono">SaveManager.gd</td>
-            <td>implemented</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="panel" id="pp-tags">
-      <h2>PP-INGEST Tag Index</h2>
-      <table class="registry-table">
-        <thead>
-          <tr><th>Tag</th><th>Topic</th><th>Tier</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="mono">PP-FOUR-PRINCIPLE</td><td>FIELD / VOID / CHAOS / NULL</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-HAPPINESS</td><td>Having fun · game-dev mind map</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-FORGIVE</td><td>Purple letter · wheel trust</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-ANCHOR</td><td>Anchor During the Storm worksheet</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-FIN-YLW</td><td>#e8c547 registry · stego field</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-STORM-CYCLE</td><td>came / went capitalization</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-FOUR-TAPE</td><td>Composer implementation vectors</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-NULL-PREV</td><td>Pathway-back monitor</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-ELEMENT-8</td><td>Seasonal wheel · opposed pairs</td><td>Authoritative</td></tr>
-          <tr><td class="mono">PP-CHITON-90</td><td>Mineral lens @ 90 BPM</td><td>Authoritative</td></tr>
-        </tbody>
-      </table>
-      <p>Full entries: <a href="findings.html">PP-INGEST Findings</a></p>
-    </section>
-
-    <section class="panel" id="subjects">
-      <h2>Personnel &amp; Subjects</h2>
-      <table class="registry-table">
-        <thead>
-          <tr><th>Designation</th><th>Role</th><th>Notes</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Subject D-441</td>
-            <td>Exposure test subject</td>
-            <td>Reported filing-cabinet sound; coined “darglark” verb <span class="personal-bias">(personal)</span></td>
-          </tr>
-          <tr>
-            <td>Derek (author)</td>
-            <td>Primary source</td>
-            <td>PapersPlease scans, vision boards, Warranty Deed OCR</td>
-          </tr>
-          <tr>
-            <td>Dark Ark Games</td>
-            <td>Development cell</td>
-            <td>Accuclicker, Elemenko, RTD, Noemaran anthology</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="panel" id="games">
-      <h2>Member Projects (Anthology Hub)</h2>
-      <p>Runnable under <span class="mono">godot/Noemaran/</span> (Godot 4.4). Legacy feel mirrors in <span class="mono">References/</span>.</p>
-      <table class="registry-table">
-        <thead>
-          <tr><th>Title</th><th>Tape / Frame</th><th>Principle lean</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Accuclicker / AccuclickerVault</td><td>Tape 2 · ClickMatrix</td><td><span class="badge badge-chaos">CHAOS</span></td></tr>
-          <tr><td>Elemenko / PinfallCrucible</td><td>Tape 3 · 8-element matrix</td><td><span class="badge badge-field">FIELD</span></td></tr>
-          <tr><td>Rouge Tile Defense</td><td>Tape 1 · StatDisplay</td><td><span class="badge badge-field">FIELD</span></td></tr>
-          <tr><td>Deshret Siege</td><td>Wall breach hook</td><td><span class="badge badge-chaos">CHAOS</span> → <span class="badge badge-null">NULL prev</span></td></tr>
-          <tr><td>Null Drift</td><td>Essence stasis minigame</td><td><span class="badge badge-null">NULL</span></td></tr>
-          <tr><td>Grove Grown Guardians</td><td>Legacy RTD mirror</td><td><span class="badge badge-field">FIELD</span></td></tr>
-        </tbody>
-      </table>
+    <footer class="site-footer stolen-footer">
       <p>
-        <span class="secret-highlight">Enhance legacy feel — never replace Accuclicker pacing with generic clicker patterns.</span>
+        Registry sync · 2026-05-27 ·
+        <a class="stolen-link" href="archive.html" title="Recovered from erased host">███://foundation-erased/yellow_sermon/404</a>
+        · mirror not sanctioned for production builds
       </p>
-    </section>
-
-    <footer class="site-footer">
-      <p>Registry sync · 2026-05-27 · propose new entries via PP-INGEST tier rules</p>
+      <p class="source-tag">Timeline source: js/audio-timeline.ts · sync useAudioTimeline.ts</p>
     </footer>
   </div>
   <script src="js/site-nav.js"></script>
   <script src="js/main.js"></script>
+  <script type="module" src="js/registry-matrix.js"></script>
 </body>
 </html>
