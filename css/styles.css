@@ -1009,6 +1009,10 @@ footer.site-footer p:last-child {
   .telemetry-hooks .telemetry-sample {
     max-width: none;
   }
+
+  .midi-archive-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- Registry Matrix · stolen feed terminal --- */
@@ -1298,6 +1302,133 @@ body.registry-terminal {
 
 .registry-index-panel h2 {
   font-size: 0.85rem;
+}
+
+/* --- Generated MIDI archive (frames.html) --- */
+.midi-archive-panel {
+  border-color: var(--dgy-border-strong);
+}
+
+.midi-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.midi-archive-card {
+  background: #0a0a0a;
+  border: 1px solid var(--dgy-border);
+  border-top: 3px solid var(--midi-accent, var(--dgy-yellow));
+  padding: var(--space-4);
+  box-shadow: inset 0 1px 0 var(--dgy-panel-glow);
+}
+
+.midi-card-header {
+  margin-bottom: var(--space-3);
+}
+
+.midi-classification {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-2);
+  border: 1px solid var(--dgy-border-strong);
+  background: var(--dgy-alert-bg);
+  color: var(--dgy-alert-text);
+}
+
+.midi-title {
+  margin: 0 0 var(--space-1);
+  font-size: 1rem;
+  color: var(--midi-accent, var(--dgy-alert-text));
+}
+
+.midi-subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.midi-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.midi-stat {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.midi-explanation {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0 0 var(--space-3);
+  color: var(--text-gold);
+}
+
+.midi-spec {
+  margin: 0 0 var(--space-3);
+  font-size: 0.78rem;
+}
+
+.midi-spec dt {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: var(--space-2);
+}
+
+.midi-spec dd {
+  margin: 0.15rem 0 0;
+  color: var(--text-gold);
+}
+
+.midi-preview {
+  margin: var(--space-3) 0;
+  padding: var(--space-2);
+  border: 1px dashed var(--dgy-border);
+  background: rgba(13, 13, 13, 0.6);
+}
+
+.midi-preview-label {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.midi-preview audio {
+  width: 100%;
+  max-width: 100%;
+}
+
+.midi-dl-btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--midi-accent, var(--dgy-yellow));
+  color: var(--dgy-alert-text);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.midi-dl-btn:hover,
+.midi-dl-btn:focus {
+  background: var(--dgy-alert-bg);
+  color: var(--text-gold);
+}
+
+.midi-download {
+  margin: 0;
 }
 
 /* --- Chiton audio player (frames.html) --- */
