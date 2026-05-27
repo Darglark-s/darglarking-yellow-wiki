@@ -210,15 +210,35 @@
       </table>
       <p><a href="findings.html">Full PP-INGEST findings →</a></p>
 
+      <h3 id="milestone-hooks" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">Milestone Hooks</h3>
+      <table class="registry-table">
+        <thead>
+          <tr><th>Hook ID</th><th>Milestone</th><th>Title</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">rtd.tiles_defended_7654</td><td>RTD_7654</td><td>GroveGrownGuardians</td><td>wired</td></tr>
+          <tr><td class="mono">rtd.backup_restore</td><td>RTD_RECOVERY</td><td>Any</td><td>wired</td></tr>
+          <tr><td class="mono">acc.overclock_60s</td><td>ACC_OVERCLOCK</td><td>Accuclicker</td><td>wired</td></tr>
+          <tr><td class="mono">acc.total_clicks_1m</td><td>ACC_LOOP</td><td>Accuclicker</td><td>wired</td></tr>
+          <tr><td class="mono">ele.all_eight_active</td><td>ELE_OCTAVE</td><td>Elemenko</td><td>wired</td></tr>
+          <tr><td class="mono">ele.ninth_element</td><td>ELE_ABSOLUTION</td><td>Elemenko</td><td>pending</td></tr>
+          <tr><td class="mono">fau.narrative_complete</td><td>FAU_ESCAPE</td><td>WhatsThisGameButcher</td><td>pending</td></tr>
+        </tbody>
+      </table>
+
       <h3 id="games" style="font-size:0.85rem;color:var(--text-orange);margin-top:1.25rem;">Member Projects</h3>
       <table class="registry-table">
-        <thead><tr><th>Title</th><th>Path</th><th>Protocol game</th></tr></thead>
+        <thead><tr><th>Title</th><th>Path</th><th>Protocol game</th><th>Tree</th></tr></thead>
         <tbody>
-          <tr><td>Null Drift</td><td>Lazy</td><td>essence / stasis</td></tr>
-          <tr><td>Deshret Siege</td><td>Active</td><td>wall breach</td></tr>
-          <tr><td>Chaos Reel</td><td>Lucky</td><td>fortune reels</td></tr>
-          <tr><td>AccuclickerVault</td><td>Lucky</td><td>ClickMatrix</td></tr>
-          <tr><td>PinfallCrucible</td><td>Active</td><td>8-element matrix</td></tr>
+          <tr><td>Null Drift</td><td>Lazy</td><td>essence / stasis</td><td><span class="mono">godot/Noemaran/</span></td></tr>
+          <tr><td>Deshret Siege</td><td>Active</td><td>wall breach</td><td><span class="mono">godot/Noemaran/</span></td></tr>
+          <tr><td>Chaos Reel</td><td>Lucky</td><td>fortune reels</td><td><span class="mono">godot/Noemaran/</span></td></tr>
+          <tr><td>AccuclickerVault</td><td>Lucky</td><td>ClickMatrix</td><td><span class="mono">godot/Noemaran/</span></td></tr>
+          <tr><td>PinfallCrucible</td><td>Active</td><td>8-element matrix</td><td><span class="mono">godot/Noemaran/</span></td></tr>
+          <tr><td>Grove Grown Guardians (RTD)</td><td>Active</td><td>StatDisplay telemetry</td><td><span class="mono">References/GroveGrownGuardians/</span></td></tr>
+          <tr><td>AccuclickerDungeons hub</td><td>—</td><td>terminal boot / SceneHandler</td><td><span class="mono">References/AccuclickerDungeons/</span></td></tr>
+          <tr><td>Elemenko pachinko</td><td>Active</td><td>16-element board + affinity layer</td><td><span class="mono">References/Elemenko/</span></td></tr>
+          <tr><td>WhatsThisGameButcher (Faurad)</td><td>—</td><td>narrative hub · pending hooks</td><td><span class="mono">References/WhatsThisGameButcher/</span></td></tr>
         </tbody>
       </table>
     </section>
@@ -232,6 +252,7 @@
       <p class="source-tag">Timeline source: js/audio-timeline.ts · sync useAudioTimeline.ts</p>
     </footer>
   </div>
+  <script src="js/site-nav-config.js"></script>
   <script src="js/site-nav.js"></script>
   <script src="js/main.js"></script>
   <script type="module" src="js/registry-matrix.js"></script>

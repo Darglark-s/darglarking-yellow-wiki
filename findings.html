@@ -262,7 +262,189 @@
     </section>
 
     <section class="panel">
+      <h2>Authoritative — Source archive inventory</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · pdf-inventory.md · MyNotesForYourUnderstanding</span>
+        <p>
+          All PDFs in the author notes folder are <strong>image-only scans</strong> — no extractable
+          text layer. Agents rely on OCR summaries and crosswalks, not raw PDF text.
+        </p>
+        <table class="registry-table">
+          <thead>
+            <tr><th>Asset</th><th>Pages</th><th>Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="mono">Warranty Deed.pdf</span></td><td>24</td><td>Design doc scan; element wheel on <strong>p. 14</strong></td></tr>
+            <tr><td><span class="mono">Warranty Deedpt2.pdf</span></td><td>24</td><td>Continuation scan</td></tr>
+            <tr><td><span class="mono">Warranty Deedfinalpt.pdf</span></td><td>19</td><td>Final section; save recovery on <strong>p. 17</strong></td></tr>
+            <tr><td><span class="mono">PapersPlease/</span> May 2026 scans</td><td>113 total</td><td>Therapy, mind maps, Life Balance — see papersplease-pdf-themes.md</td></tr>
+            <tr><td><span class="mono">IMG_1311.jpeg</span></td><td>—</td><td>Vision board (2023-01-15)</td></tr>
+            <tr><td><span class="mono">IMG_1312.jpeg</span></td><td>—</td><td>Lighthouse / storm sketch</td></tr>
+          </tbody>
+        </table>
+        <p class="source-tag">Agent rule: do not guess Warranty prose from Composer page citations alone — verify via OCR crosswalk.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — Warranty page-number correction</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · warranty-deed-keyword-scan.md</span>
+        <p>Composer prompts cited “p. 15” and “p. 17” — full-PDF OCR found different locations:</p>
+        <table class="registry-table">
+          <thead>
+            <tr><th>Composer cited</th><th>Actual scan location</th><th>Content</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Warranty D p. 15 (8-element matrix)</td>
+              <td><span class="mono">Warranty Deed.pdf</span> <strong>p. 14</strong></td>
+              <td>Seasonal wheel: Spring–Wood, Summer–Fire, Fall–Metal, Winter–Water + extensions</td>
+            </tr>
+            <tr>
+              <td>Warranty D p. 17 (10-folder recovery)</td>
+              <td><span class="mono">Warranty Deedfinalpt.pdf</span> <strong>p. 17</strong></td>
+              <td>“allow deleted saves up to 10 saves 00–09” · move to deleted folder</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          OCR fragments from recovery page align with implemented
+          <span class="mono">SaveManager.gd</span>: <span class="mono">recovery_00</span> …
+          <span class="mono">recovery_09</span>, FIFO eviction, move-never-wipe.
+        </p>
+        <p>
+          <span class="secret-highlight">Warranty Deed.pdf p. 15 is a personal journal page — not the element matrix.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — High-signal PDF pages</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · papersplease-pdf-themes.md</span>
+        <table class="registry-table">
+          <thead>
+            <tr><th>Scan</th><th>Page</th><th>Notes</th><th>Registry hook</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>pdf1 (3_14_55 PM)</td><td>1</td><td>Anger cycle + pink “Stay calm”</td><td><span class="mono">TRACK_3_CALM</span></td></tr>
+            <tr><td>pdf1</td><td>12</td><td>Purple resilience letter</td><td><span class="mono">FORGIVENESS_RGB</span></td></tr>
+            <tr><td>pdf1</td><td>13</td><td>DEREK mind map — Game Dev orange branch</td><td><span class="mono">GAME_DEV_HUB</span></td></tr>
+            <tr><td>pdf3 (3_25_40 PM)</td><td>1–5</td><td>Five Element Assessment</td><td><span class="mono">FIVE_ELEMENT_PDF_ORDER</span></td></tr>
+            <tr><td>pdf3</td><td>23</td><td>Handwritten MUSIC header</td><td><span class="mono">MUSIC_HEADER</span></td></tr>
+            <tr><td>pdf5 (3_37_51 PM)</td><td>11</td><td>Life Balance wheel (6 segments)</td><td><span class="mono">LIFE_BALANCE_SEGMENTS</span></td></tr>
+            <tr><td>pdf4 / pdf5</td><td>—</td><td><span class="mono">An Anchor During the Storm</span> worksheet</td><td><span class="mono">PP-ANCHOR</span></td></tr>
+          </tbody>
+        </table>
+        <p class="source-tag">Exclude from mechanics: pdf1 p9 (cat coloring), p11 (MISTAKES/GROW) — reference art only.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — Reference Analysis Protocol (May 2026)</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · pdf-reference-analysis.md · Referece Analysis Protocal.md</span>
+        <p>
+          All 10 PDFs in <span class="mono">MyNotesForYourUnderstanding</span> (113 PapersPlease +
+          67 Warranty + 8 agent handoff pages) were analyzed via the four-step protocol:
+          state machine → state parameters → Godot architecture → pseudocode.
+          <strong>22 protocol blocks</strong> written; ~85% of scan pages tiered personal/biased.
+        </p>
+        <table class="registry-table">
+          <thead>
+            <tr><th>Source</th><th>Page</th><th>State machine</th><th>Godot target</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Warranty Deed</td><td>14</td><td>Seasonal element wheel + overlap validation</td><td><span class="mono">ElementAffinityValidator</span></td></tr>
+            <tr><td>Warranty finalpt</td><td>17</td><td>Soft-delete shelf <span class="mono">recovery_00–09</span></td><td><span class="mono">SaveManager</span> (implemented)</td></tr>
+            <tr><td>Warranty finalpt</td><td>16</td><td>Party roster + element combining</td><td>Future <span class="mono">GroveTrialRoster</span></td></tr>
+            <tr><td>Warranty finalpt</td><td>9</td><td>Tape-player desk hub chrome</td><td><span class="mono">WTGArchive</span> / terminal menu</td></tr>
+            <tr><td>pdf1</td><td>1</td><td>Anger cycle → Chiton calm before breach</td><td><span class="mono">NoemaranAudioTimelineDirector</span></td></tr>
+            <tr><td>pdf1</td><td>13</td><td>Game Dev mind map hub routing</td><td><span class="mono">NoemaranRegistry</span></td></tr>
+            <tr><td>pdf3</td><td>19</td><td>Anchor During the Storm → lighthouse persistence</td><td><span class="mono">SaveManager</span> + hub autoloads</td></tr>
+            <tr><td>pdf5</td><td>12</td><td>Life Balance wheel · Financial: Yellow</td><td><span class="mono">LIFE_BALANCE_SEGMENTS</span></td></tr>
+          </tbody>
+        </table>
+        <p>
+          Agent handoff PDFs (<span class="mono">workspace-progress-summary</span>,
+          <span class="mono">cursor-rules-and-references-review</span>) classified
+          <strong>AgentSynthesis</strong> — never promoted to mechanics without author OCR.
+          Regenerator: <span class="mono">scripts/analyze_mynotes_pdfs_protocol.py</span>.
+        </p>
+        <p class="source-tag">Full blocks: MyNotesForYourUnderstanding/pdf-reference-analysis.md</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — Five Element Assessment (pdf3)</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · FIELD · lore bridge to Elemenko</span>
+        <p>
+          Handwritten Five Element Assessment (pdf3 pp. 1–5) predates the Warranty eight-element wheel.
+          Registry order in <span class="mono">darglarking_themes.py</span>:
+        </p>
+        <p class="mono" style="font-size:0.85rem;">wood · fire · earth · metal · water</p>
+        <p>
+          Composer eight-element implementation (Electric, Air, Fire, Water, Earth, Wood, Metal, Leaf)
+          extends the seasonal wheel on Warranty p. 14 — not identical to the five-element worksheet,
+          but both map under Tape 3 FIELD validation.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — Vision board palette (IMG_1311)</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · creative-context.md · darglarking_themes.py</span>
+        <div class="swatches">
+          <span class="swatch"><i style="background:#a8c4cf"></i> #a8c4cf · Chiton calm / cosmic blue</span>
+          <span class="swatch"><i style="background:#e8c547"></i> #e8c547 · Darglarking gold / transition</span>
+          <span class="swatch"><i style="background:#a07a7a"></i> #a07a7a · Storm breach / Dragonfly</span>
+          <span class="swatch"><i style="background:#e8a65b"></i> #e8a65b · Lighthouse phase shift</span>
+          <span class="swatch"><i style="background:#3d8b4e"></i> #3d8b4e · Green sea / carapace</span>
+          <span class="swatch"><i style="background:#38804f"></i> #38804f · Storm went / collapse tail</span>
+          <span class="swatch"><i style="background:#f5a8b8"></i> #f5a8b8 · Vision pink (hub frame)</span>
+          <span class="swatch"><i style="background:#ff6b00"></i> #ff6b00 · Neon orange StatDisplay</span>
+        </div>
+        <p>Motif read (motivation, not spec): keys/handoff → save recovery; mandala → multi-title hub; Eiffel → aspirational registry scope.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Authoritative — Milestone hook registry</h2>
+      <div class="truth-tier authoritative">
+        <span class="tier-label">Authoritative · warranty-deed-crosswalk.md · SaveManager</span>
+        <p>Cross-title hooks defined in <span class="mono">SaveManager.gd</span> — most await gameplay call sites:</p>
+        <table class="registry-table">
+          <thead>
+            <tr><th>Hook ID</th><th>Milestone</th><th>Title</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="mono">rtd.tiles_defended_7654</td><td>RTD_7654</td><td>GroveGrownGuardians</td><td>wired</td></tr>
+            <tr><td class="mono">rtd.backup_restore</td><td>RTD_RECOVERY</td><td>Any (recover_save)</td><td>wired</td></tr>
+            <tr><td class="mono">acc.overclock_60s</td><td>ACC_OVERCLOCK</td><td>Accuclicker</td><td>wired</td></tr>
+            <tr><td class="mono">acc.total_clicks_1m</td><td>ACC_LOOP</td><td>Accuclicker</td><td>wired</td></tr>
+            <tr><td class="mono">ele.all_eight_active</td><td>ELE_OCTAVE</td><td>Elemenko / Pinfall</td><td>wired</td></tr>
+            <tr><td class="mono">ele.ninth_element</td><td>ELE_ABSOLUTION</td><td>Elemenko</td><td>pending</td></tr>
+            <tr><td class="mono">fau.narrative_complete</td><td>FAU_ESCAPE</td><td>WhatsThisGameButcher</td><td>pending</td></tr>
+          </tbody>
+        </table>
+        <p>Full table: <a href="registry.html#milestone-hooks">Registry § Milestone hooks</a></p>
+      </div>
+    </section>
+
+    <section class="panel">
       <h2>Personal / biased — margin &amp; journal fragments</h2>
+      <div class="truth-tier personal">
+        <span class="tier-label">Personal · biased · Warranty Deed scans (keyword scan)</span>
+        <ul>
+          <li><span class="mono">Warranty Deedpt2.pdf</span> p. 10 — SCP-049 reference; metal/water emotion metaphor <span class="personal-bias">(containment tone bleed)</span></li>
+          <li><span class="mono">Warranty Deedfinalpt.pdf</span> p. 9 — WT6 tape-player desk UI sketch <span class="personal-bias">(aesthetic reference)</span></li>
+          <li><span class="mono">Warranty Deedfinalpt.pdf</span> p. 16 — fantasy + roguelike relationship/combining sketch <span class="personal-bias">(future Elemenko/RTD direction, not implemented)</span></li>
+        </ul>
+      </div>
+
       <div class="truth-tier personal">
         <span class="tier-label">Personal · biased · Warranty p15 OCR</span>
         <p>
@@ -317,6 +499,12 @@
         <li><span class="mono">PP-NULL-PREV</span> → NULL principle · pathway-back monitor</li>
         <li><span class="mono">PP-ELEMENT-8</span> → p.14 seasonal wheel · opposed-pair validator</li>
         <li><span class="mono">PP-CHITON-90</span> → mineral lens durability @ 90 BPM calm frame</li>
+        <li><span class="mono">PP-SOURCE-ARCHIVE</span> → pdf-inventory · 67 + 113 OCR pages</li>
+        <li><span class="mono">PP-WARRANTY-P14</span> → seasonal element wheel (not p. 15)</li>
+        <li><span class="mono">PP-RECOVERY-17</span> → finalpt p. 17 · recovery_00–09</li>
+        <li><span class="mono">PP-FIVE-ELEMENT</span> → pdf3 assessment · wood-fire-earth-metal-water</li>
+        <li><span class="mono">PP-MILESTONE</span> → SaveManager hook registry</li>
+        <li><span class="mono">PP-PROTOCOL-22</span> → pdf-reference-analysis.md · 22 blocks · 10 PDFs</li>
       </ul>
     </section>
 
@@ -324,6 +512,7 @@
       <p>Source pack: MyNotesForYourUnderstanding · creative-context.md · papersplease-pdf-themes.md</p>
     </footer>
   </div>
+  <script src="js/site-nav-config.js"></script>
   <script src="js/site-nav.js"></script>
   <script src="js/main.js"></script>
 </body>
