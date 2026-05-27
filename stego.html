@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Lab | LSB Steganography | The Darglarking Yellow</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="crt">
+  <div class="wrap crt-flicker">
+    <header class="site-header">
+      <h1>Asset Lab</h1>
+      <p class="subtitle">Field Steganography · DGY1 Payload Channel · PNG Only</p>
+    </header>
+
+    <nav class="primary-nav" data-auto-nav aria-label="Site sections"></nav>
+
+    <section class="panel stego-tool">
+      <h2>LSB Embed / Extract</h2>
+      <p>
+        Least Significant Bit encoding writes your secret into the R/G/B LSBs of the pixel
+        array. Visual change is negligible for short strings. Payload format:
+        <span class="mono">MAGIC "DGY1" + 32-bit length + UTF-8 message</span>.
+      </p>
+
+      <label for="stego-file">Upload game asset (PNG)</label>
+      <input type="file" id="stego-file" accept="image/png">
+
+      <label for="stego-message">Secret string to embed</label>
+      <textarea id="stego-message" placeholder="e.g. DGY1://pp/financial-yellow/e8c547"></textarea>
+
+      <button type="button" id="stego-embed">Embed payload</button>
+      <button type="button" id="stego-extract">Extract payload</button>
+
+      <p class="stego-status" id="stego-status">Awaiting PNG.</p>
+
+      <div class="stego-preview">
+        <canvas id="stego-preview" width="320" height="200" aria-label="Image preview"></canvas>
+        <div>
+          <label for="stego-extract-out">Extracted text</label>
+          <textarea id="stego-extract-out" readonly rows="4" placeholder="(none)"></textarea>
+          <p style="margin-top:1rem;">
+            <a id="stego-download" href="#" download hidden>Download stego PNG</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Field asset truth</h2>
+      <p>
+        Shipped game texture <span class="mono">darglarking_field_asset.png</span> embeds the
+        authoritative author token (Financial: Yellow / registry gold). Crosswalk:
+        <a href="findings.html">PP-INGEST</a>.
+      </p>
+      <p>
+        <span class="secret-highlight">Default payload: DGY1://pp/financial-yellow/e8c547</span>
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Implementation Notes</h2>
+      <ul>
+        <li>Use lossless PNG only — JPEG recompression destroys LSBs.</li>
+        <li>Capacity scales with pixel count (~3 bits per pixel for RGB).</li>
+        <li>In-game: <span class="mono">DarglarkingStegoBridge</span> autoload probes the field PNG on boot.</li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <p>Client-side only · No uploads leave this machine.</p>
+    </footer>
+  </div>
+  <script src="js/site-nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lsb-stego.js"></script>
+  <script src="js/stego-ui.js"></script>
+</body>
+</html>

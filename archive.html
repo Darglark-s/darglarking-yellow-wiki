@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrupted Archive | The Darglarking Yellow</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="crt">
+  <div class="wrap crt-flicker">
+    <header class="site-header">
+      <h1>Corrupted Archive</h1>
+      <p class="subtitle">Media Recovery · Error State 404 · Digital Erasure Traces</p>
+    </header>
+
+    <nav class="primary-nav" data-auto-nav aria-label="Site sections"></nav>
+
+    <section class="panel">
+      <h2>Recovery Log</h2>
+      <p>
+        The following assets failed checksum validation on the live web. Local thumbnails
+        render as broken. Investigation staff should treat apparent 404 states as routing
+        hints to external cold storage (Wayback Machine).
+      </p>
+    </section>
+
+    <section class="broken-asset-zone">
+      <h2 style="font-size:0.9rem;color:var(--text-muted);">ERR_IMG_LOAD · REF: YELLOW-SERMON-01</h2>
+      <!-- Looks broken; opens archived "erased" page -->
+      <a
+        class="wayback-ghost"
+        href="https://web.archive.org/web/20190315120000/https://example.com/"
+        title="404 — asset not found"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="broken-thumb"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23111' width='120' height='80'/%3E%3Ctext x='8' y='44' fill='%23555' font-family='monospace' font-size='10'%3E404%3C/text%3E%3C/svg%3E"
+          alt=""
+          width="120"
+          height="80"
+        >
+      </a>
+      <p class="err-label">FILE: yellow_sermon.gif · STATUS: NOT FOUND ON ORIGIN HOST</p>
+      <p class="err-label mono" style="margin-top:1rem;font-size:0.7rem;">
+        /* Replace example.com in archive.html with your real erased URL.<br>
+        Format: https://web.archive.org/web/[timestamp]/[original_url] */
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Wayback Integration Notes</h2>
+      <p>
+        Timestamp <span class="mono">20190315120000</span> is a placeholder snapshot ID.
+        Update the <code>href</code> on the ghost link to point at your canonical erased page.
+      </p>
+      <p>
+        Players who right-click or follow the "broken" image perform
+        <em>digital time travel</em>—recovering content the Foundation did not intend to persist.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Secondary Fragment</h2>
+      <p>
+        Recovered alt text from cache (corrupted):
+        <span class="secret-highlight">LOOP-404 opens when the image refuses to load</span>
+      </p>
+    </section>
+
+    <section class="panel" data-invisible-collapse>
+      <h2>Erased Metadata (PP crosswalk)</h2>
+      <p>
+        Recovered JSON sidecar from author ingest pipeline lists directive tags:
+        Happiness, Health, Boundaries, Forgiveness. Not published on live host.
+        Activation point follows.
+        <button type="button" class="invisible-trigger" aria-expanded="false" aria-label="Expand erased metadata" title="">&#8203;</button>
+      </p>
+      <div class="collapsible-secret" aria-hidden="true">
+        <p><strong>Authoritative:</strong> “Financial: Yellow” segment on Life Balance wheel (pdf5 p11).</p>
+        <p><strong>Personal / biased:</strong> Agent note—mapping whole project namesake to that wheel segment is interpretive; see <a href="findings.html">PP-INGEST</a>.</p>
+        <p><strong>Authoritative:</strong> Full findings file path in repo:
+        <span class="mono">MyNotesForYourUnderstanding/creative-context.md</span></p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Archive module · Do not hotlink production Wayback URLs in shipped builds without rate limits.</p>
+    </footer>
+  </div>
+  <script src="js/site-nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
