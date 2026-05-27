@@ -109,10 +109,33 @@
       </p>
     </section>
 
+    <section class="panel telemetry-panel" data-save-telemetry id="live-telemetry">
+      <h2>SaveManager · Live Telemetry (Mock)</h2>
+      <p class="article-lead">
+        Mock database log mirroring <span class="mono">godot/shared/SaveManager.gd</span> hook
+        registry — static snapshot plus scrolling ingest lines. Production builds wire these from
+        Godot run state; the wiki displays the schema.
+      </p>
+      <p class="telemetry-stamp mono"></p>
+      <div class="telemetry-log mono" aria-live="polite" aria-label="Mock SaveManager log"></div>
+      <table class="registry-table telemetry-hooks">
+        <thead>
+          <tr><th>Hook ID</th><th>Steam API</th><th>Title</th><th>Status</th><th>Sample payload</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="source-tag">
+        Cross-ref: <a href="#milestone-hooks">Milestone hooks</a> ·
+        <a href="findings.html">PP-MILESTONE</a> ·
+        <span class="mono">report_game_hook()</span>
+      </p>
+    </section>
+
     <section class="panel registry-index-panel" id="anomalies">
       <h2>Full Registry Index</h2>
       <div class="tag-cloud">
         <a href="#anomalies-table">Anomalies</a>
+        <a href="#live-telemetry">Telemetry</a>
         <a href="#systems">Systems</a>
         <a href="#tapes">Tapes</a>
         <a href="#pp-tags">PP Tags</a>
@@ -220,6 +243,7 @@
           <tr><td class="mono">rtd.backup_restore</td><td>RTD_RECOVERY</td><td>Any</td><td>wired</td></tr>
           <tr><td class="mono">acc.overclock_60s</td><td>ACC_OVERCLOCK</td><td>Accuclicker</td><td>wired</td></tr>
           <tr><td class="mono">acc.total_clicks_1m</td><td>ACC_LOOP</td><td>Accuclicker</td><td>wired</td></tr>
+          <tr><td class="mono">acc.stego_dgy1</td><td>ACC_STEGO</td><td>Accuclicker</td><td>wired</td></tr>
           <tr><td class="mono">ele.all_eight_active</td><td>ELE_OCTAVE</td><td>Elemenko</td><td>wired</td></tr>
           <tr><td class="mono">ele.ninth_element</td><td>ELE_ABSOLUTION</td><td>Elemenko</td><td>pending</td></tr>
           <tr><td class="mono">fau.narrative_complete</td><td>FAU_ESCAPE</td><td>WhatsThisGameButcher</td><td>pending</td></tr>
@@ -255,6 +279,7 @@
   <script src="js/site-nav-config.js"></script>
   <script src="js/site-nav.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/save-telemetry-mock.js"></script>
   <script type="module" src="js/registry-matrix.js"></script>
 </body>
 </html>

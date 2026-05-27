@@ -54,6 +54,13 @@
         <a href="findings.html">PP-INGEST</a>.
       </p>
       <p>
+        <img src="assets/textures/darglarking_field_asset.png" width="128" height="128" alt="Darglarking field asset (64×64 PNG with DGY1 LSB payload)" style="image-rendering:pixelated;border:1px solid var(--dgy-border);margin:0.5rem 0;">
+      </p>
+      <p>
+        <a href="assets/textures/darglarking_field_asset.png" download="darglarking_field_asset.png">Download field PNG</a>
+        · probe in Asset Lab above · in-game hook: <span class="mono">acc.stego_dgy1</span>
+      </p>
+      <p>
         <span class="secret-highlight">Default payload: DGY1://pp/financial-yellow/e8c547</span>
       </p>
     </section>
@@ -63,7 +70,7 @@
       <ul>
         <li>Use lossless PNG only — JPEG recompression destroys LSBs.</li>
         <li>Capacity scales with pixel count (~3 bits per pixel for RGB).</li>
-        <li>In-game: <span class="mono">DarglarkingStegoBridge</span> autoload probes the field PNG on boot.</li>
+        <li>In-game: <span class="mono">DarglarkingStegoBridge</span> autoload probes the field PNG on boot → <span class="mono">SaveManager.report_game_hook("acc.stego_dgy1")</span>.</li>
       </ul>
     </section>
 

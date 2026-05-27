@@ -997,8 +997,17 @@ footer.site-footer p:last-child {
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .stego-preview {
+  .chiton-controls {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chiton-play {
+    width: 100%;
+  }
+
+  .telemetry-hooks .telemetry-sample {
+    max-width: none;
   }
 }
 
@@ -1289,6 +1298,99 @@ body.registry-terminal {
 
 .registry-index-panel h2 {
   font-size: 0.85rem;
+}
+
+/* --- Chiton audio player (frames.html) --- */
+.chiton-player-panel {
+  border-color: var(--dgy-border-strong);
+  background: linear-gradient(180deg, rgba(232, 197, 71, 0.06) 0%, var(--bg-panel) 35%);
+}
+
+.chiton-player-panel.is-playing {
+  box-shadow: inset 0 0 0 1px var(--dgy-border);
+}
+
+.chiton-bpm-readout {
+  font-size: 0.78rem;
+  color: var(--pp-calm-blue);
+  margin: 0 0 var(--space-3);
+}
+
+.chiton-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.chiton-play {
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  border: 1px solid var(--dgy-yellow);
+  color: var(--dgy-alert-text);
+  font-family: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.chiton-play:hover,
+.chiton-play:focus {
+  background: var(--dgy-alert-bg);
+  outline: none;
+}
+
+.chiton-status {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.chiton-player-panel audio {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  margin-top: var(--space-2);
+}
+
+/* --- SaveManager mock telemetry (registry.html) --- */
+.telemetry-panel {
+  border-color: var(--dgy-amber-dim);
+}
+
+.telemetry-stamp {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-3);
+}
+
+.telemetry-log {
+  max-height: 9rem;
+  overflow-y: auto;
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  border-left: 3px solid var(--dgy-amber);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.telemetry-log-line {
+  margin: 0 0 var(--space-2);
+  color: var(--pp-calm-blue);
+}
+
+.telemetry-log-line:first-child {
+  color: var(--dgy-alert-text);
+}
+
+.telemetry-hooks .telemetry-sample {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  max-width: 14rem;
+  word-break: break-all;
 }
 
 @media (max-width: 720px) {
