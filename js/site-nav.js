@@ -18,6 +18,26 @@
     { href: "stego.html", label: "Asset Lab", required: true },
   ];
 
+  /** Resolved at script parse time — document.currentScript is null after this IIFE returns. */
+  var WIKI_ROOT = (function () {
+    var script = document.currentScript;
+    if (!script || !script.src) {
+      return "";
+    }
+    try {
+      var url = new URL(script.src, window.location.href);
+      var path = url.pathname.replace(/\\/g, "/");
+      var marker = "/js/site-nav.js";
+      var idx = path.indexOf(marker);
+      if (idx !== -1) {
+        return path.slice(0, idx + 1);
+      }
+    } catch (err) {
+      /* fall through */
+    }
+    return "";
+  })();
+
   function getLinks() {
     if (window.DGY_NAV_LINKS && window.DGY_NAV_LINKS.length) {
       return window.DGY_NAV_LINKS;
@@ -40,7 +60,8 @@
     }
   }
 
-  function getNavBasePrefix() {
+  /** Fallback when currentScript / URL parsing unavailable (legacy relative pages). */
+  function getRelativePrefix() {
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
       var src = scripts[i].getAttribute("src") || "";
@@ -50,6 +71,13 @@
       }
     }
     return "";
+  }
+
+  function resolveNavHref(linkHref) {
+    if (WIKI_ROOT) {
+      return WIKI_ROOT + linkHref;
+    }
+    return getRelativePrefix() + linkHref;
   }
 
   function getCurrentPageName() {
@@ -71,14 +99,13 @@
     var links = getLinks();
     validateLinks(links);
 
-    var prefix = getNavBasePrefix();
     var currentPage = getCurrentPageName();
     nav.innerHTML = "";
     nav.setAttribute("role", "navigation");
 
     links.forEach(function (link) {
       var a = document.createElement("a");
-      a.href = prefix + link.href;
+      a.href = resolveNavHref(link.href);
       a.textContent = link.label;
       a.className = "nav-link";
       if (link.required) {
@@ -92,5 +119,9 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", injectNav);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", injectNav);
+  } else {
+    injectNav();
+  }
 })();
