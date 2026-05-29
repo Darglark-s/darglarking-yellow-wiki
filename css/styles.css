@@ -1889,3 +1889,116 @@ body.registry-terminal {
     width: 100%;
   }
 }
+
+/* --- Classified sub-documents (classified/*.html) --- */
+.classification-overseer {
+  border-color: #4a2080;
+  background: rgba(74, 32, 128, 0.15);
+  color: #c4a8e8;
+}
+
+.threat-mutable {
+  color: #d4a5ff;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.classified-doc-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 14rem) 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.classified-subnav {
+  position: sticky;
+  top: calc(var(--layout-nav-pad-y) * 2 + 3rem);
+  padding: var(--space-4);
+  margin-bottom: 0;
+}
+
+.classified-subnav h2 {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-3);
+}
+
+.classified-subnav-list {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  font-size: 0.82rem;
+}
+
+.classified-subnav-list li {
+  margin-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: var(--space-2);
+}
+
+.classified-subnav-list a {
+  color: var(--text-orange);
+  text-decoration: none;
+}
+
+.classified-subnav-list a:hover,
+.classified-subnav-list a:focus,
+.classified-subnav-list a[aria-current="page"] {
+  color: var(--dgy-alert-text);
+  text-decoration: underline;
+}
+
+.classified-subnav-meta {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.classified-subnav-meta dt {
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+
+.classified-subnav-meta dd {
+  margin: 0.1rem 0 0;
+}
+
+.consciousness-header-panel {
+  border-top: 3px solid #6b2d8a;
+}
+
+.consciousness-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid #6b2d8a;
+  color: #d4a5ff;
+  background: rgba(107, 45, 138, 0.12);
+}
+
+.consciousness-meta-table th {
+  width: 38%;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.consciousness-warp {
+  border-left-color: #6b5b95;
+}
+
+@media (max-width: 720px) {
+  .classified-doc-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .classified-subnav {
+    position: static;
+  }
+}
