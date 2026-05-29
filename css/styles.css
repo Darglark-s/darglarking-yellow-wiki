@@ -2086,6 +2086,56 @@ body.registry-terminal {
   color: var(--text-muted);
 }
 
+/* Handler / Overseer recovery logs (classified sub-docs) */
+.handler-note-panel {
+  border: 1px solid #3d6b5c;
+  border-left: 4px solid #2a786e;
+  background: rgba(42, 120, 110, 0.06);
+}
+
+.handler-note-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid #2a786e;
+  color: #7ecfc4;
+  background: rgba(42, 120, 110, 0.15);
+}
+
+.handler-note-block {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-4);
+  border-left: 3px solid var(--text-gold);
+  background: rgba(0, 0, 0, 0.35);
+  font-style: italic;
+  color: var(--text-gold);
+}
+
+.handler-note-block p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.handler-note-block p::before {
+  content: "\201C";
+  color: #7ecfc4;
+  font-style: normal;
+}
+
+.handler-note-block p::after {
+  content: "\201D";
+  color: #7ecfc4;
+  font-style: normal;
+}
+
+.handler-note-meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 @media (max-width: 720px) {
   .classified-doc-layout {
     grid-template-columns: 1fr;
