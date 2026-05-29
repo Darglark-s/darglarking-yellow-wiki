@@ -2136,6 +2136,38 @@ body.registry-terminal {
   margin: 0;
 }
 
+/* INDEX-0AI · macroscopic mirror (digital accent) */
+.index-0ai-header-panel {
+  border-top: 3px solid #3a6ea5;
+}
+
+.index-0ai-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid #3a6ea5;
+  color: #8ec4ff;
+  background: rgba(58, 110, 165, 0.12);
+}
+
+.index-0ai-meta-table th {
+  width: 38%;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.index-0ai-reflect {
+  border-left-color: #3a6ea5;
+}
+
+.index-0ai-sprout {
+  border-left-color: #5a8fc4;
+}
+
 @media (max-width: 720px) {
   .classified-doc-layout {
     grid-template-columns: 1fr;
