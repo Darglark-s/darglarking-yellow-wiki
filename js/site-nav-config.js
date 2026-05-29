@@ -13,6 +13,7 @@
     { href: "principles.html", label: "Principles", required: true },
     { href: "frames.html", label: "Frames", required: true },
     { href: "registry.html", label: "Registry", required: true },
+    { href: "con-779.html", label: "CON-779", required: true },
     { href: "dossier.html", label: "Dossier", required: true },
     { href: "findings.html", label: "PP-INGEST", required: true },
     { href: "archive.html", label: "Archive", required: true },
