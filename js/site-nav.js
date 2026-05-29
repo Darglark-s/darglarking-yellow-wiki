@@ -40,6 +40,27 @@
     }
   }
 
+  function getNavBasePrefix() {
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i++) {
+      var src = scripts[i].getAttribute("src") || "";
+      if (src.indexOf("site-nav.js") !== -1) {
+        var up = src.match(/^((?:\.\.\/)+)/);
+        return up ? up[1] : "";
+      }
+    }
+    return "";
+  }
+
+  function getCurrentPageName() {
+    var pathname = window.location.pathname.replace(/\\/g, "/");
+    var name = pathname.split("/").pop() || "index.html";
+    if (!name || name.indexOf(".") === -1) {
+      return "index.html";
+    }
+    return name;
+  }
+
   function injectNav() {
     var nav = document.querySelector("nav.primary-nav[data-auto-nav]");
     if (!nav) {
@@ -50,19 +71,20 @@
     var links = getLinks();
     validateLinks(links);
 
-    var path = window.location.pathname.split("/").pop() || "index.html";
+    var prefix = getNavBasePrefix();
+    var currentPage = getCurrentPageName();
     nav.innerHTML = "";
     nav.setAttribute("role", "navigation");
 
     links.forEach(function (link) {
       var a = document.createElement("a");
-      a.href = link.href;
+      a.href = prefix + link.href;
       a.textContent = link.label;
       a.className = "nav-link";
       if (link.required) {
         a.dataset.required = "true";
       }
-      if (link.href === path) {
+      if (link.href === currentPage) {
         a.setAttribute("aria-current", "page");
         a.classList.add("is-current");
       }
