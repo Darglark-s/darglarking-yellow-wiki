@@ -53,11 +53,18 @@
 
     function triggerOverload() {
       locked = true;
+      var isFailsafe = overload && overload.classList.contains("doom-failsafe");
       if (status) {
-        status.textContent = "HARD DISCONNECT · simulation script terminated.";
+        status.textContent = isFailsafe
+          ? "SAFE-ROOM FAIL-SAFE · lockdown · simulation reset."
+          : "HARD DISCONNECT · simulation script terminated.";
       }
       if (overload) overload.hidden = false;
-      appendLog("DOOM_VAR exceeded · EX Final Boss early spawn · SERVER-CRASH RISK");
+      appendLog(
+        isFailsafe
+          ? "DOOM_VAR exceeded · Safe-Room Fail-Safe · residents shielded"
+          : "DOOM_VAR exceeded · EX Final Boss early spawn · SERVER-CRASH RISK"
+      );
       root.querySelectorAll("[data-doom-action]").forEach(function (btn) {
         btn.disabled = true;
       });
