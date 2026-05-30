@@ -4124,3 +4124,38 @@ body.registry-terminal {
   letter-spacing: 0.06em;
   color: #b8a9e8;
 }
+
+.simulation-principles-kit-panel {
+  border-left: 3px solid var(--text-gold);
+}
+
+.simulation-xk-panel {
+  border: 1px solid rgba(107, 91, 149, 0.45);
+  border-left: 4px solid #b8a9e8;
+  background: linear-gradient(135deg, rgba(50, 35, 80, 0.15) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.simulation-xk-panel h2 {
+  color: #b8a9e8;
+}
+
+.simulation-xk-note {
+  margin: var(--space-4) 0 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: #b8a9e8;
+}
+
+.simulation-conflict-panel,
+.simulation-conflict-audit-panel {
+  border-left: 3px solid rgba(199, 62, 62, 0.45);
+}
+
+.simulation-conflict-audit-panel {
+  background: rgba(30, 10, 10, 0.12);
+}
+
+.simulation-conflict-table td:first-child {
+  font-weight: 600;
+  color: var(--text-gold);
+}
