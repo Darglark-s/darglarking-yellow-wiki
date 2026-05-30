@@ -1,6 +1,6 @@
 /**
  * Case Studies tab panels — directory + case file views.
- * Hash routing: case-studies.html#index | #case-01 | #case-02 | #case-03
+ * Hash routing: case-studies.html#index | #case-01 | #case-02 | #case-03 | #case-04
  */
 (function () {
   "use strict";
