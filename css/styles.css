@@ -2538,3 +2538,101 @@ body.registry-terminal {
 .object-000-void-panel.is-void-discovered .object-000-hidden-stream {
   border-color: rgba(127, 217, 154, 0.35);
 }
+
+/* Resonant Vessel · four-principle stabilization schematic */
+.object-000-schematic-panel {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  border: 1px solid var(--dgy-border);
+  border-top: 3px solid var(--pp-calm-blue);
+  background: rgba(168, 196, 207, 0.04);
+}
+
+.object-000-schematic-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed var(--border-dim);
+}
+
+.object-000-schematic-id {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--pp-calm-blue);
+}
+
+.object-000-schematic-sub {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+}
+
+.object-000-schematic-lead {
+  margin: 0 0 var(--space-4);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.object-000-phase-list {
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-5);
+  list-style: none;
+  counter-reset: object-000-phase;
+}
+
+.object-000-phase {
+  position: relative;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--border-dim);
+  counter-increment: object-000-phase;
+}
+
+.object-000-phase::before {
+  content: counter(object-000-phase, decimal-leading-zero);
+  position: absolute;
+  left: calc(-1 * var(--space-5) - 0.1rem);
+  top: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.object-000-phase-null { border-left-color: #555; }
+.object-000-phase-void { border-left-color: #6b5b95; }
+.object-000-phase-chaos { border-left-color: #c73e3e; }
+.object-000-phase-field { border-left-color: #3d8b4e; }
+
+.object-000-phase-spec {
+  margin: 0;
+}
+
+.object-000-phase-spec dt {
+  margin: 0 0 var(--space-2);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dgy-alert-text);
+}
+
+.object-000-phase-spec dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-gold);
+}
+
+.object-000-pipeline-table {
+  margin: var(--space-4) 0 0;
+  font-size: 0.75rem;
+}
+
+.object-000-pipeline-table th {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
