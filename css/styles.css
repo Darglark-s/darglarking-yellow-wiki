@@ -2288,6 +2288,55 @@ body.registry-terminal {
   border-color: var(--pp-gold);
 }
 
+.cipher-reveal-stamp {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid var(--pp-gold);
+  color: var(--pp-gold);
+  background: rgba(232, 197, 71, 0.08);
+}
+
+.cipher-reveal-terminal {
+  padding: var(--space-4);
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  border-left: 3px solid var(--pp-calm-blue);
+}
+
+.cipher-reveal-terminal p {
+  margin: 0 0 var(--space-3);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.cipher-reveal-terminal p:last-child {
+  margin-bottom: 0;
+}
+
+.cipher-reveal-lead {
+  font-size: 1rem !important;
+  letter-spacing: 0.06em;
+  color: var(--dgy-alert-text) !important;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-dim);
+  margin-bottom: var(--space-4) !important;
+}
+
+.cipher-reveal-cross {
+  margin-top: var(--space-4) !important;
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-dim);
+  font-size: 0.82rem !important;
+  color: var(--text-muted) !important;
+}
+
+.cipher-reveal-cross a {
+  color: var(--text-orange);
+}
+
 .cipher-reveal-body p {
   margin: 0;
   font-size: 0.95rem;

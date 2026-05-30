@@ -5,10 +5,10 @@
   "use strict";
 
   var VALID = {
-    ka: { label: "Ka", title: "Vital Signature" },
-    fate: { label: "Fate", title: "Settling Pattern" },
-    karma: { label: "Karma", title: "Action Ledger" },
-    luck: { label: "Luck", title: "Wind-Borne Favor" },
+    ka: { label: "Ka", title: "The Vital Essence" },
+    fate: { label: "Fate", title: "The Predetermined Path" },
+    karma: { label: "Karma", title: "The Reciprocal Flow" },
+    luck: { label: "Luck", title: "The Meaningful Force" },
   };
 
   function normalize(raw) {
