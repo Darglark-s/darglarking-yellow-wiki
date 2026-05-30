@@ -13,6 +13,7 @@
     { href: "registry.html", label: "Registry", required: true },
     { href: "classified.html", label: "Classified", required: true },
     { href: "dossier.html", label: "Dossier", required: true },
+    { href: "cipher.html", label: "Cipher", required: true },
     { href: "findings.html", label: "PP-INGEST", required: true },
     { href: "archive.html", label: "Archive", required: true },
     { href: "stego.html", label: "Asset Lab", required: true },

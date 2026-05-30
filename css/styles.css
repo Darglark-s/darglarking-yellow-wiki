@@ -2186,3 +2186,121 @@ body.registry-terminal {
     transform: rotate(90deg);
   }
 }
+
+/* --- The Cipher · wind riddle gate (cipher.html) --- */
+.cipher-panel {
+  border-top: 3px solid var(--pp-calm-blue);
+}
+
+.cipher-riddle {
+  margin: var(--space-4) 0;
+  padding: var(--space-5);
+  border: 1px solid var(--dgy-border);
+  border-left: 4px solid var(--pp-calm-blue);
+  background: rgba(168, 196, 207, 0.06);
+  text-align: center;
+}
+
+.cipher-riddle p {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  color: var(--dgy-alert-text);
+  line-height: 1.7;
+}
+
+.cipher-form {
+  margin-top: var(--space-5);
+}
+
+.cipher-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.cipher-input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+
+.cipher-input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: var(--space-3);
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  color: var(--text-gold);
+  font-size: 0.95rem;
+}
+
+.cipher-input:focus {
+  outline: none;
+  border-color: var(--pp-calm-blue);
+  box-shadow: 0 0 0 1px rgba(168, 196, 207, 0.25);
+}
+
+.cipher-submit {
+  padding: var(--space-3) var(--space-5);
+  background: rgba(168, 196, 207, 0.12);
+  border: 1px solid var(--pp-calm-blue);
+  color: var(--pp-calm-blue);
+  font-family: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cipher-submit:hover,
+.cipher-submit:focus {
+  background: rgba(168, 196, 207, 0.22);
+  color: var(--text-gold);
+  outline: none;
+}
+
+.cipher-feedback {
+  min-height: 1.25rem;
+  margin: var(--space-3) 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.cipher-feedback[data-tone="ok"] {
+  color: #7fd99a;
+}
+
+.cipher-feedback[data-tone="warn"] {
+  color: var(--dgy-alert-text);
+}
+
+.cipher-reveal-panel {
+  border-left: 4px solid var(--dgy-yellow);
+  animation: cipher-reveal-in 0.45s ease;
+}
+
+.cipher-reveal-panel.is-open {
+  border-color: var(--pp-gold);
+}
+
+.cipher-reveal-body p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+@keyframes cipher-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-2));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
