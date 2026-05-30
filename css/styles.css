@@ -4235,6 +4235,51 @@ body.registry-terminal {
   border-left: 4px solid var(--dgy-amber);
 }
 
+.magic-refinery-panel {
+  border-top: 3px solid rgba(140, 110, 30, 0.55);
+  border-left: 4px solid rgba(180, 140, 40, 0.7);
+  background: linear-gradient(180deg, rgba(28, 22, 6, 0.35) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.magic-crude-block {
+  border-color: rgba(160, 120, 30, 0.5);
+  background: rgba(20, 16, 4, 0.45);
+}
+
+.magic-crude-block h3 {
+  color: var(--dgy-amber);
+}
+
+.magic-refine-block {
+  margin-top: var(--space-4);
+  border-color: rgba(120, 90, 20, 0.45);
+}
+
+.magic-refine-block h3 {
+  color: var(--text-orange);
+}
+
+.magic-hazard-heading {
+  margin: var(--space-5) 0 var(--space-3);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.magic-hazard-table th {
+  font-size: 0.68rem;
+}
+
+.magic-hazard-table td {
+  font-size: 0.82rem;
+  vertical-align: top;
+}
+
+.magic-appearance-dl dd {
+  color: rgba(255, 210, 140, 0.85);
+}
+
 .magic-clinical-lead {
   font-size: 1.05rem;
   color: var(--text-gold);
