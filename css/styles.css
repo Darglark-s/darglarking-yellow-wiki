@@ -3332,3 +3332,181 @@ body.registry-terminal {
   border-color: rgba(200, 80, 40, 0.45);
   color: var(--dgy-alert-text);
 }
+
+.case-personnel-roster-panel {
+  border-top: 3px solid var(--text-orange);
+}
+
+.case-personnel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.case-personnel-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border-dim);
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.55) 0%, rgba(30, 22, 8, 0.35) 100%);
+  min-height: 100%;
+}
+
+.case-personnel-card-recovered {
+  border-color: rgba(180, 120, 40, 0.45);
+  border-left: 3px solid var(--text-orange);
+}
+
+.case-personnel-card-encrypted {
+  border-left: 3px solid var(--border-dim);
+  opacity: 0.88;
+}
+
+.case-personnel-card-locked {
+  border-left: 3px solid rgba(80, 80, 80, 0.6);
+  opacity: 0.5;
+}
+
+.case-personnel-card-head {
+  border-bottom: 1px dashed var(--border-dim);
+  padding-bottom: var(--space-3);
+}
+
+.case-personnel-file {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: var(--space-2);
+}
+
+.case-personnel-card-recovered .case-personnel-file {
+  color: var(--dgy-alert-text);
+}
+
+.case-personnel-name {
+  margin: 0 0 var(--space-1);
+  font-size: 1rem;
+  color: var(--text-gold);
+}
+
+.case-personnel-name-redacted {
+  color: var(--text-dim);
+  letter-spacing: 0.2em;
+}
+
+.case-personnel-role {
+  margin: 0;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.case-personnel-trope {
+  font-size: 0.88rem;
+  color: var(--text-gold);
+}
+
+.case-personnel-trope-label {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: var(--space-1);
+  text-transform: uppercase;
+}
+
+.case-personnel-trope-alias {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.case-personnel-meta {
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+  font-size: 0.78rem;
+}
+
+.case-personnel-meta dt {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: var(--space-1);
+}
+
+.case-personnel-meta dd {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.case-personnel-abstract {
+  margin: 0;
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: rgba(220, 190, 130, 0.85);
+  border-top: 1px solid rgba(80, 60, 30, 0.35);
+  padding-top: var(--space-3);
+}
+
+.case-personnel-abstract-redacted {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.case-personnel-open {
+  display: inline-block;
+  margin-top: auto;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--text-orange);
+  color: var(--text-orange);
+  text-decoration: none;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.case-personnel-open:hover,
+.case-personnel-open:focus {
+  background: rgba(200, 120, 40, 0.12);
+}
+
+.case-personnel-locked {
+  display: block;
+  margin-top: auto;
+  padding: var(--space-2) var(--space-3);
+  border: 1px dashed var(--border-dim);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.case-personnel-redacted {
+  color: var(--text-dim);
+  letter-spacing: 0.12em;
+}
+
+.case-personnel-index-note {
+  margin: var(--space-5) 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-dim);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .case-personnel-grid {
+    grid-template-columns: 1fr;
+  }
+}
