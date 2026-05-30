@@ -3,6 +3,7 @@
  * required links without updating .cursor/rules/darglarking-yellow-wiki.mdc
  *
  * Single source of truth for js/site-nav.js on every page.
+ * NAV_CONFIG_VERSION=9 — bump HTML ?v= when this list changes.
  */
 (function (global) {
   "use strict";

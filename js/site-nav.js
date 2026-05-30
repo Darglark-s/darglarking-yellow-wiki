@@ -44,11 +44,38 @@
     return "";
   })();
 
+  /** Canonical order for merge + stale-cache recovery. */
+  var LINK_ORDER = {};
+  FALLBACK_LINKS.forEach(function (link, index) {
+    LINK_ORDER[link.href] = index;
+  });
+
   function getLinks() {
-    if (window.DGY_NAV_LINKS && window.DGY_NAV_LINKS.length) {
-      return window.DGY_NAV_LINKS;
-    }
-    return FALLBACK_LINKS;
+    var links =
+      window.DGY_NAV_LINKS && window.DGY_NAV_LINKS.length
+        ? window.DGY_NAV_LINKS.slice()
+        : FALLBACK_LINKS.slice();
+    var present = {};
+
+    links.forEach(function (link) {
+      present[link.href] = true;
+    });
+
+    /* Stale ?v= caches may omit newly added required tabs — restore from fallback. */
+    FALLBACK_LINKS.forEach(function (fallback) {
+      if (!present[fallback.href]) {
+        links.push(fallback);
+        console.warn("[DGY-NAV] Restored missing required link:", fallback.href);
+      }
+    });
+
+    links.sort(function (a, b) {
+      var ai = LINK_ORDER[a.href];
+      var bi = LINK_ORDER[b.href];
+      return (ai !== undefined ? ai : 999) - (bi !== undefined ? bi : 999);
+    });
+
+    return links;
   }
 
   function validateLinks(links) {
@@ -123,6 +150,9 @@
       }
       nav.appendChild(a);
     });
+
+    nav.dataset.navCount = String(links.length);
+    nav.dataset.navVersion = "9";
   }
 
   if (document.readyState === "loading") {
