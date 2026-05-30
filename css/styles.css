@@ -3648,3 +3648,142 @@ body.registry-terminal {
   border-top-color: rgba(200, 80, 40, 0.35);
   color: var(--dgy-alert-text);
 }
+
+/* Case File 03 · Chosen Neophyte (Trainee Maya Lin) */
+.case-personnel-card-neophyte {
+  border-color: rgba(42, 120, 110, 0.45);
+  border-left-color: #2a786e;
+}
+
+.case-neophyte-header {
+  border-top: 3px solid #2a786e;
+  background: linear-gradient(160deg, rgba(10, 40, 35, 0.3) 0%, var(--bg-panel) 50%);
+}
+
+.case-neophyte-node-stamp {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: #7ecfc4;
+  margin-bottom: var(--space-2);
+}
+
+.case-neophyte-node-id {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.72rem;
+  color: #7ecfc4;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(42, 120, 110, 0.45);
+  overflow-x: auto;
+}
+
+.case-neophyte-profile {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid rgba(42, 120, 110, 0.35);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.case-neophyte-profile dt {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: var(--space-1);
+}
+
+.case-neophyte-profile dd {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-gold);
+}
+
+.case-neophyte-status-warn {
+  color: #7ecfc4;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.case-neophyte-abstract-panel {
+  border-left: 3px solid rgba(42, 120, 110, 0.5);
+}
+
+.case-neophyte-log-panel {
+  border-left: 3px solid #2a786e;
+}
+
+.case-neophyte-diary {
+  color: rgba(200, 235, 220, 0.88);
+  background: rgba(8, 30, 25, 0.45);
+  border-color: rgba(42, 120, 110, 0.35);
+}
+
+.case-neophyte-entry-label {
+  margin: var(--space-5) 0 var(--space-2);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: #7ecfc4;
+}
+
+.case-neophyte-log-panel .case-neophyte-entry-label:first-of-type {
+  margin-top: var(--space-3);
+}
+
+.case-neophyte-entry-final {
+  color: #9ee8dc;
+}
+
+.case-neophyte-diary-final {
+  border-color: rgba(60, 180, 160, 0.45);
+}
+
+.case-neophyte-truncation-note {
+  margin: var(--space-3) 0 0;
+  font-size: 0.68rem;
+  color: #7ecfc4;
+  letter-spacing: 0.08em;
+}
+
+.case-neophyte-evaluation-panel {
+  border: 1px solid rgba(42, 120, 110, 0.45);
+  border-left: 4px solid #7ecfc4;
+  background: linear-gradient(135deg, rgba(20, 60, 55, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.case-neophyte-evaluation-panel h2 {
+  color: #7ecfc4;
+}
+
+.case-neophyte-diagnostic {
+  margin: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.case-neophyte-diag-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: #7ecfc4;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.case-neophyte-diagnostic dd {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.case-neophyte-footer {
+  border-top-color: rgba(42, 120, 110, 0.4);
+  color: #7ecfc4;
+}
+
+.case-neophyte-footer a {
+  color: #9ee8dc;
+}
