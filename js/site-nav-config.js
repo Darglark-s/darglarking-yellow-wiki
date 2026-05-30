@@ -17,6 +17,7 @@
     { href: "classified.html", label: "Classified", required: true },
     { href: "dossier.html", label: "Dossier", required: true },
     { href: "cipher.html", label: "Cipher", required: true },
+    { href: "magic.html", label: "Magic", required: true },
     { href: "field-guide.html", label: "Field Guide", required: true },
     { href: "delusion-assessment.html", label: "Assessment", required: true },
     { href: "case-studies.html", label: "Case Studies", required: true },

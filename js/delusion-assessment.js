@@ -69,6 +69,7 @@
         { href: "field-guide.html#profile-alpha", label: "Field Guide · Anti-Calcification curriculum (unlocked)" },
         { href: "classified/macroscopic-mirror.html#cognitive-defense", label: "INDEX-0AI · Untrue Luck defense log" },
         { href: "case-studies.html#case-03", label: "Case File 03 · Trainee Maya Lin · Chosen Neophyte trope" },
+        { href: "magic.html", label: "Magic · tier manual · willful ignorance subtext" },
       ],
       fieldGuideHash: "profile-alpha",
       fieldGuideKey: "a",

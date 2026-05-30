@@ -4202,3 +4202,125 @@ body.registry-terminal {
 .asset-lab-field-note p {
   margin: 0;
 }
+
+/* --- Magic (magic.html) · clinical manual with amber subtext --- */
+.magic-page .magic-header {
+  border-bottom: 2px solid var(--dgy-amber-dim);
+}
+
+.magic-archive-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  background: rgba(40, 32, 8, 0.25);
+}
+
+.magic-archive-stamp p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.magic-archive-stamp p + p {
+  margin-top: var(--space-2);
+  color: var(--dgy-amber);
+}
+
+.classification-magic {
+  color: var(--dgy-amber);
+}
+
+.magic-axiom-panel {
+  border-left: 4px solid var(--dgy-amber);
+}
+
+.magic-clinical-lead {
+  font-size: 1.05rem;
+  color: var(--text-gold);
+}
+
+.magic-handler-warning {
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.magic-warning-label {
+  margin: 0 0 var(--space-2);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--dgy-amber);
+}
+
+.magic-handler-warning p:last-child {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.magic-tier-panel {
+  margin-bottom: var(--space-4);
+}
+
+.magic-tier-one {
+  border-left-color: var(--dgy-amber);
+}
+
+.magic-tier-two {
+  border-left-color: #c73e3e;
+}
+
+.magic-tier-three {
+  border-left-color: #6b5b95;
+}
+
+.magic-tier-clue-dl {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0 0;
+  font-size: 0.85rem;
+}
+
+.magic-tier-clue-dl dt {
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.magic-tier-clue-dl dd {
+  margin: 0 0 var(--space-2);
+  color: var(--text-muted);
+}
+
+.magic-conservation-panel {
+  border-top: 3px solid var(--dgy-amber-dim);
+}
+
+.magic-amber-block {
+  border-color: var(--dgy-amber-dim);
+  background: linear-gradient(135deg, rgba(232, 197, 71, 0.08) 0%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.magic-amber-block h3 {
+  color: var(--dgy-amber);
+}
+
+.magic-clinical-footer {
+  margin: var(--space-4) 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px dashed rgba(201, 162, 39, 0.35);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+
+.magic-subtext-warning {
+  margin-top: var(--space-4);
+  border-color: rgba(201, 162, 39, 0.4);
+}
+
+.magic-relay-panel {
+  border-left: 3px solid #6b5b95;
+}
