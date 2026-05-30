@@ -3193,3 +3193,142 @@ body.registry-terminal {
 .delusion-assessment-unlock-list a {
   color: var(--text-orange);
 }
+
+/* --- Case Studies Index (case-studies.html) --- */
+.case-studies-archive-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid var(--border-dim);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.case-studies-archive-stamp p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.case-studies-archive-stamp p + p {
+  margin-top: var(--space-2);
+  color: var(--text-gold);
+}
+
+.case-studies-directory-table .case-row-active td {
+  color: var(--text-gold);
+}
+
+.case-studies-directory-table .case-row-redacted td {
+  color: var(--text-dim);
+  opacity: 0.55;
+}
+
+.case-file-stamp {
+  margin-bottom: var(--space-3);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--dgy-alert-text);
+}
+
+.case-file-meta-table th {
+  width: 28%;
+}
+
+.case-diary-panel {
+  border-left: 3px solid var(--text-orange);
+}
+
+.case-diary-meta {
+  margin: 0 0 var(--space-3);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.case-diary-entry {
+  margin: 0;
+  padding: var(--space-4) var(--space-5);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  font-style: italic;
+  color: rgba(255, 210, 140, 0.92);
+  background: rgba(20, 12, 4, 0.45);
+  border: 1px solid rgba(180, 120, 40, 0.25);
+}
+
+.case-diary-entry p {
+  margin: 0 0 var(--space-4);
+}
+
+.case-diary-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.case-diary-entry-emphasis {
+  color: var(--text-orange);
+  font-weight: 600;
+}
+
+.case-diary-stasis .case-diary-entry {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: rgba(200, 180, 140, 0.75);
+}
+
+.case-diary-entry-short p {
+  margin-bottom: var(--space-2);
+}
+
+.case-clinical-panel {
+  border-left: 3px solid var(--border-dim);
+}
+
+.case-clinical-note {
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.case-clinical-note p {
+  margin: 0 0 var(--space-4);
+}
+
+.case-clinical-footer {
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-dim);
+  font-size: 0.72rem;
+  color: var(--dgy-alert-text);
+}
+
+.case-studies-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.case-studies-shortcut-btn {
+  display: inline-block;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-dim);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--text-gold);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.case-studies-shortcut-btn:hover,
+.case-studies-shortcut-btn:focus {
+  border-color: var(--text-orange);
+  color: var(--text-orange);
+}
+
+.case-studies-shortcut-warn {
+  border-color: rgba(200, 80, 40, 0.45);
+  color: var(--dgy-alert-text);
+}

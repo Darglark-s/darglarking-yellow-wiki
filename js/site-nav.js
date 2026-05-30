@@ -16,6 +16,7 @@
     { href: "cipher.html", label: "Cipher", required: true },
     { href: "field-guide.html", label: "Field Guide", required: true },
     { href: "delusion-assessment.html", label: "Assessment", required: true },
+    { href: "case-studies.html", label: "Case Studies", required: true },
     { href: "findings.html", label: "PP-INGEST", required: true },
     { href: "archive.html", label: "Archive", required: true },
     { href: "stego.html", label: "Asset Lab", required: true },
