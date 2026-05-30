@@ -2827,3 +2827,52 @@ body.registry-terminal {
   white-space: pre-wrap;
   word-break: break-word;
 }
+
+.false-panacea-counter-panel {
+  border-left: 4px solid #3d8b4e;
+}
+
+/* INDEX-0AI · cognitive defense diagnostic */
+.index-0ai-diagnostic-panel {
+  border-top: 3px solid #3a6ea5;
+  border-left: 4px solid #7fd99a;
+}
+
+.index-0ai-json-log {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-4);
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #7fd99a;
+  overflow-x: auto;
+}
+
+.index-0ai-defense-dl {
+  margin: var(--space-4) 0;
+}
+
+.index-0ai-defense-dl dt {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dgy-alert-text);
+  margin-top: var(--space-3);
+}
+
+.index-0ai-defense-dl dd {
+  margin: var(--space-2) 0 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.index-0ai-phase-list {
+  margin: var(--space-3) 0 0;
+  padding-left: var(--space-5);
+}
+
+.index-0ai-phase-list li {
+  margin-bottom: var(--space-3);
+  line-height: 1.65;
+}
