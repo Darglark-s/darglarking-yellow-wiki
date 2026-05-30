@@ -4159,3 +4159,46 @@ body.registry-terminal {
   font-weight: 600;
   color: var(--text-gold);
 }
+
+/* --- Asset Lab · Conceptual Anchors (stego.html) --- */
+.asset-lab-notes-panel {
+  border-top: 3px solid var(--text-gold);
+  background: linear-gradient(160deg, rgba(40, 32, 8, 0.2) 0%, var(--bg-panel) 55%);
+}
+
+.asset-lab-notes-stamp {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: var(--space-3);
+}
+
+.asset-lab-meta-table th {
+  width: 32%;
+  font-size: 0.72rem;
+}
+
+.asset-lab-topology-diagram {
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  text-align: center;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: var(--text-gold);
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--border-dim);
+  overflow-x: auto;
+}
+
+.asset-lab-field-note {
+  margin: var(--space-4) 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--text-gold);
+  background: rgba(232, 197, 71, 0.06);
+  font-style: italic;
+  color: rgba(255, 220, 140, 0.9);
+}
+
+.asset-lab-field-note p {
+  margin: 0;
+}
