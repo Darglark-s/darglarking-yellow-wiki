@@ -3966,3 +3966,53 @@ body.registry-terminal {
 .case-noemaran-footer a {
   color: #a8e8b8;
 }
+
+.case-noemaran-fluid-panel,
+.case-noemaran-extraction-panel {
+  border-left: 3px solid rgba(74, 124, 89, 0.45);
+}
+
+.case-noemaran-extraction-panel {
+  border: 1px solid rgba(74, 124, 89, 0.35);
+  background: rgba(8, 25, 15, 0.25);
+}
+
+.case-noemaran-protocol-log {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.72rem;
+  color: #8fd4a0;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(74, 124, 89, 0.4);
+  overflow-x: auto;
+}
+
+.index-0ai-reconstruction-panel {
+  border-top: 3px solid #4a7c59;
+}
+
+.field-guide-noemaran-panel {
+  border-top: 3px solid #4a7c59;
+  background: linear-gradient(160deg, rgba(10, 35, 20, 0.2) 0%, var(--bg-panel) 55%);
+}
+
+.field-guide-noemaran-dl {
+  display: grid;
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.field-guide-noemaran-dl dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: #8fd4a0;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.field-guide-noemaran-dl dd {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}

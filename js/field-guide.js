@@ -159,6 +159,17 @@
           href: "principles.html#null",
           hrefLabel: "Structural Physics · NULL",
         },
+        {
+          badge: "field",
+          badgeLabel: "FIELD",
+          title: "Noemaran Mask Protocol",
+          lesson:
+            "Advanced handlers: baseline fixed, perspective fluid. You may investigate delusions deliberately — immersive frames, catalyst-assisted lens shifts — if return to baseline is guaranteed. Isolation is a misread; the seatbelt is the core, not the cage.",
+          exercise:
+            "Drill: enter one bounded thought experiment today. Set a hard stop condition. Log your return to baseline.",
+          href: "case-studies.html#case-04",
+          hrefLabel: "Case File 04 · Fluid Perspective Dynamics",
+        },
       ],
     },
   };

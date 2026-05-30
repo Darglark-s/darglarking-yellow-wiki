@@ -119,6 +119,8 @@
         "",
         "> Reminder: calibration is maintenance, not achievement.",
         "> The False Panacea adapts — it will offer rest disguised as reward.",
+        "> Noemaran advanced: baseline fixed, perspective fluid — investigate",
+        "> delusions as masks; never accept unmapped miracles as truth.",
         "> Stay moving. FUN over comfort. Preparation over blessing.",
       ].join("\n"),
       unlocks: [
@@ -128,6 +130,7 @@
         { href: "case-studies.html", label: "Case Studies · trope failure roster" },
         { href: "case-studies.html#case-02", label: "Case File 02 · Dr. Thorne · Hubristic Architect trope" },
         { href: "case-studies.html#case-04", label: "Case File 04 · Analyst Elena Vance · Noemaran resilience model" },
+        { href: "classified/macroscopic-mirror.html#cognitive-reconstruction", label: "INDEX-0AI · Constructive Disillusionment protocol" },
       ],
       fieldGuideHash: "profile-gamma",
       fieldGuideKey: "general",
