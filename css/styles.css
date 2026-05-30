@@ -1871,6 +1871,17 @@ body.registry-terminal {
   font-style: italic;
 }
 
+.entity-row-corrupted td {
+  color: #ff8a80;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  background: rgba(199, 62, 62, 0.06);
+}
+
+.entity-row-corrupted .mono {
+  color: #c73e3e;
+}
+
 .doom-failsafe {
   border-color: var(--dgy-amber-dim);
   background: rgba(232, 197, 71, 0.08);
