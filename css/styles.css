@@ -1882,6 +1882,40 @@ body.registry-terminal {
   color: #c73e3e;
 }
 
+.entity-row-recommended td {
+  background: rgba(232, 197, 71, 0.08);
+  border-top: 2px solid var(--dgy-yellow);
+}
+
+.entity-row-recommended td:first-child {
+  color: var(--dgy-alert-text);
+}
+
+.false-panacea-recommend-panel {
+  border-left: 4px solid var(--dgy-yellow);
+  background: rgba(232, 197, 71, 0.06);
+}
+
+.false-panacea-recommend-link {
+  color: var(--text-orange);
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  margin-right: var(--space-3);
+}
+
+.false-panacea-recommend-link:hover,
+.false-panacea-recommend-link:focus {
+  color: var(--dgy-yellow);
+  text-decoration: underline;
+}
+
+.false-panacea-recommend-badge {
+  font-size: 0.72rem;
+  color: var(--dgy-yellow);
+  letter-spacing: 0.1em;
+}
+
 .doom-failsafe {
   border-color: var(--dgy-amber-dim);
   background: rgba(232, 197, 71, 0.08);
@@ -2635,4 +2669,161 @@ body.registry-terminal {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
+}
+
+/* --- False Panacea (classified/false-panacea.html) --- */
+.false-panacea-log-stamp {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(155, 89, 182, 0.08);
+  border: 1px solid rgba(155, 89, 182, 0.45);
+  border-left: 4px solid var(--pp-purple);
+}
+
+.false-panacea-log-stamp p {
+  margin: 0;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  color: #c4a8e8;
+}
+
+.false-panacea-log-stamp p + p {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-size: 0.68rem;
+}
+
+.false-panacea-header-panel {
+  border-top: 3px solid var(--pp-purple);
+}
+
+.false-panacea-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid var(--pp-purple);
+  color: #c4a8e8;
+  background: rgba(155, 89, 182, 0.12);
+}
+
+.false-panacea-meta-table th {
+  width: 38%;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.false-panacea-untrue-panel {
+  border-left: 4px solid var(--pp-purple);
+}
+
+.false-panacea-principle-dl {
+  margin: var(--space-4) 0 0;
+}
+
+.false-panacea-principle-row {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed var(--border-dim);
+}
+
+.false-panacea-principle-row:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.false-panacea-principle-row dt {
+  margin: 0 0 var(--space-2);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+
+.false-panacea-principle-row dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.false-panacea-theory-select {
+  margin: var(--space-4) 0;
+  padding: var(--space-3);
+  border: 1px solid var(--border-dim);
+  background: #080808;
+}
+
+.false-panacea-theory-select legend {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0 var(--space-2);
+}
+
+.false-panacea-theory-option {
+  display: block;
+  margin: var(--space-2) 0;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.false-panacea-theory-option input {
+  margin-right: var(--space-2);
+}
+
+.false-panacea-assess-btn {
+  padding: var(--space-3) var(--space-4);
+  background: rgba(155, 89, 182, 0.15);
+  border: 1px solid var(--pp-purple);
+  color: #c4a8e8;
+  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.false-panacea-assess-btn:hover,
+.false-panacea-assess-btn:focus {
+  color: var(--dgy-yellow);
+  border-color: var(--dgy-yellow);
+  outline: none;
+}
+
+.false-panacea-diagnostic-void {
+  margin-top: var(--space-4);
+  min-height: 3rem;
+  padding: var(--space-3);
+  background: #050505;
+  border: 1px dashed #222;
+}
+
+.false-panacea-diagnostic-hidden::selection {
+  color: #7fd99a;
+  background: rgba(127, 217, 154, 0.2);
+}
+
+.false-panacea-console {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: #080808;
+  border: 1px solid var(--pp-purple);
+  border-left: 3px solid #7fd99a;
+  animation: cipher-reveal-in 0.45s ease;
+}
+
+.false-panacea-console-label {
+  margin: 0 0 var(--space-3);
+  font-size: 0.72rem;
+  color: #7fd99a;
+  letter-spacing: 0.1em;
+}
+
+.false-panacea-console-body {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #7fd99a;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
