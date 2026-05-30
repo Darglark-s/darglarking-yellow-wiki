@@ -2876,3 +2876,130 @@ body.registry-terminal {
   margin-bottom: var(--space-3);
   line-height: 1.65;
 }
+
+/* --- Handler Field Guide (field-guide.html) --- */
+.field-guide-intro-panel {
+  border-top: 3px solid #3d8b4e;
+}
+
+.field-guide-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  padding: var(--space-1) var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid #3d8b4e;
+  color: #7fd99a;
+  background: rgba(61, 139, 78, 0.1);
+}
+
+.field-guide-theory-select {
+  margin: var(--space-4) 0;
+  padding: var(--space-3);
+  border: 1px solid var(--border-dim);
+  background: #080808;
+}
+
+.field-guide-theory-select legend {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0 var(--space-2);
+}
+
+.field-guide-theory-option {
+  display: block;
+  margin: var(--space-3) 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.field-guide-theory-option input {
+  margin-right: var(--space-2);
+}
+
+.field-guide-generate-btn {
+  padding: var(--space-3) var(--space-4);
+  background: rgba(61, 139, 78, 0.15);
+  border: 1px solid #3d8b4e;
+  color: #7fd99a;
+  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.field-guide-generate-btn:hover,
+.field-guide-generate-btn:focus {
+  color: var(--dgy-yellow);
+  border-color: var(--dgy-yellow);
+  outline: none;
+}
+
+.field-guide-intake-feedback {
+  min-height: 1.25rem;
+  margin: var(--space-3) 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.field-guide-intake-feedback[data-tone="ok"] {
+  color: #7fd99a;
+}
+
+.field-guide-intake-feedback[data-tone="warn"] {
+  color: var(--dgy-alert-text);
+}
+
+.field-guide-curriculum-panel {
+  border-left: 4px solid #3d8b4e;
+  animation: cipher-reveal-in 0.45s ease;
+}
+
+.field-guide-curriculum-sub {
+  margin: 0 0 var(--space-4);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.field-guide-modules {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.field-guide-exercise {
+  padding: var(--space-3);
+  border-left: 3px solid var(--dgy-yellow);
+  background: rgba(232, 197, 71, 0.06);
+  font-size: 0.88rem;
+}
+
+.field-guide-baseline {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border: 1px dashed var(--dgy-border);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.field-guide-baseline h3 {
+  margin: 0 0 var(--space-3);
+  font-size: 0.9rem;
+  color: var(--dgy-alert-text);
+}
+
+.field-guide-recommend-link,
+.field-guide-recommend-link {
+  color: var(--text-orange);
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.field-guide-recommend-link:hover,
+.field-guide-recommend-link:focus {
+  color: var(--dgy-yellow);
+  text-decoration: underline;
+}

@@ -41,6 +41,7 @@
     "> —— MEMETIC MIRROR SUMMARY ——",
     "> Handler: whichever theory felt true is the cognitive vector of assimilation.",
     "> Untrue Luck is active when comfort replaces movement.",
+    "> Continue: field-guide.html (generate curriculum for your vector).",
     "> End diagnostic.",
   ].join("\n");
 
@@ -75,6 +76,11 @@
       consoleWrap.classList.add("is-open");
       typeConsole(consoleBody, message);
       consoleWrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+      var guideLink = root.querySelector(".false-panacea-field-guide-link a");
+      if (guideLink && key !== "none") {
+        guideLink.href = "../field-guide.html#theory-" + key;
+      }
     });
   }
 
