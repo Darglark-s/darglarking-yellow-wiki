@@ -4016,3 +4016,111 @@ body.registry-terminal {
   line-height: 1.55;
   color: var(--text-muted);
 }
+
+/* --- Simulation Theory (simulation-theory.html) --- */
+.simulation-theory-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid var(--border-dim);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.simulation-theory-stamp p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.simulation-theory-stamp p + p {
+  margin-top: var(--space-2);
+  color: #b8a9e8;
+}
+
+.simulation-framework-panel {
+  border-top: 3px solid #6b5b95;
+}
+
+.simulation-json-log {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.72rem;
+  color: #b8a9e8;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(107, 91, 149, 0.45);
+  overflow-x: auto;
+}
+
+.simulation-framework-dl {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-4) 0 0;
+}
+
+.simulation-framework-dl dt {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.simulation-framework-dl dd {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.simulation-civ-panel {
+  border-left: 3px solid #6b5b95;
+}
+
+.simulation-bones-panel {
+  border-left: 3px solid rgba(107, 91, 149, 0.6);
+}
+
+.simulation-noemaran-panel {
+  border: 1px solid rgba(74, 124, 89, 0.35);
+  background: rgba(8, 25, 15, 0.15);
+}
+
+.simulation-run-index-table .sim-run-active td {
+  color: var(--text-gold);
+}
+
+.simulation-run-index-table .sim-run-redacted td {
+  opacity: 0.5;
+  color: var(--text-dim);
+}
+
+.simulation-run-header {
+  border-top: 3px solid #6b5b95;
+}
+
+.simulation-run-stamp {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: #b8a9e8;
+  margin-bottom: var(--space-3);
+}
+
+.simulation-procedural-bones-panel {
+  border-left: 3px solid var(--text-gold);
+}
+
+.simulation-idealized-bones-panel {
+  border-left: 3px solid #6b5b95;
+  background: linear-gradient(160deg, rgba(40, 30, 60, 0.15) 0%, transparent 70%);
+}
+
+.simulation-bones-archive-table th {
+  font-size: 0.72rem;
+}
+
+.simulation-archaeology-note {
+  margin: var(--space-4) 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-dim);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: #b8a9e8;
+}

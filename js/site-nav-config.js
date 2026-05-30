@@ -11,6 +11,7 @@
     { href: "index.html", label: "Main Page", required: true },
     { href: "doctrine.html", label: "Doctrine", required: true },
     { href: "principles.html", label: "Principles", required: true },
+    { href: "simulation-theory.html", label: "Simulation", required: true },
     { href: "frames.html", label: "Frames", required: true },
     { href: "registry.html", label: "Registry", required: true },
     { href: "classified.html", label: "Classified", required: true },
