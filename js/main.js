@@ -226,11 +226,31 @@
     });
   }
 
+  function initArchivistConsole() {
+    var path = window.location.pathname.replace(/\\/g, "/");
+    var page = path.split("/").pop() || "index.html";
+    if (page !== "index.html" && page !== "") return;
+
+    console.log(
+      "%c// ATTN ARCHIVIST: RE-VEIL SIGNAL IS LEAKING",
+      "color:#888;font-family:monospace;font-size:11px"
+    );
+    console.log(
+      "%c// trace fragment · override route · /world-domination.html",
+      "color:#665;font-family:monospace;font-size:11px"
+    );
+    console.log(
+      "%c// DGY-NET :: inspect is not cheating · it is clearance",
+      "color:#443;font-family:monospace;font-size:10px"
+    );
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initRedactTokens();
     initInvisibleCollapsibles();
     initHighlightReveal();
     initTerminalBoot();
     initClearanceToggle();
+    initArchivistConsole();
   });
 })();
