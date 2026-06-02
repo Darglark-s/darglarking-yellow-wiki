@@ -13,6 +13,7 @@
     { href: "frames.html", label: "Frames", required: true },
     { href: "registry.html", label: "Registry", required: true },
     { href: "classified.html", label: "Classified", required: true },
+    { href: "world-domination.html", label: "World Dom", required: true },
     { href: "dossier.html", label: "Dossier", required: true },
     { href: "cipher.html", label: "Cipher", required: true },
     { href: "magic.html", label: "Magic", required: true },
@@ -152,7 +153,7 @@
     });
 
     nav.dataset.navCount = String(links.length);
-    nav.dataset.navVersion = "9";
+    nav.dataset.navVersion = "10";
   }
 
   if (document.readyState === "loading") {
