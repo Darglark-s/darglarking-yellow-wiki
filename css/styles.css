@@ -5164,3 +5164,139 @@ body.wd-is-decrypted .wd-site-header h1 {
     margin: 0 auto;
   }
 }
+
+/* --- Deshret Protocol (deshret-protocol.html) · SPS-08 sandbox --- */
+.deshret-page .deshret-header {
+  border-bottom: 2px solid rgba(107, 91, 149, 0.55);
+}
+
+.deshret-incident-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid rgba(107, 91, 149, 0.4);
+  background: rgba(20, 12, 32, 0.35);
+}
+
+.deshret-incident-stamp p {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.deshret-incident-stamp p + p {
+  margin-top: var(--space-2);
+  color: #9b8ec4;
+}
+
+.classification-deshret {
+  color: #9b8ec4;
+}
+
+.deshret-tab-bar {
+  margin-bottom: var(--layout-section-gap);
+}
+
+.deshret-tab-panel {
+  margin-bottom: var(--layout-section-gap);
+}
+
+.deshret-overview-panel {
+  border-left: 3px solid #6b5b95;
+}
+
+.deshret-pipeline-list {
+  margin: var(--space-3) 0 var(--space-4);
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.deshret-pipeline-list a {
+  color: var(--text-orange);
+}
+
+.deshret-directive {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-4);
+  border: 1px dashed rgba(107, 91, 149, 0.45);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.deshret-directive-label {
+  margin: 0 0 var(--space-2);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: #9b8ec4;
+}
+
+.deshret-directive p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.deshret-stage-panel {
+  border-left: 4px solid var(--dgy-border);
+}
+
+.deshret-stage-one {
+  border-left-color: var(--dgy-amber);
+}
+
+.deshret-stage-two {
+  border-left-color: #6b5b95;
+}
+
+.deshret-stage-three {
+  border-left-color: #c73e3e;
+}
+
+.deshret-stage-four {
+  border-left-color: #4ade80;
+}
+
+.deshret-stage-tag {
+  margin: 0 0 var(--space-4);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.deshret-purge-steps {
+  margin: var(--space-3) 0;
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.deshret-purge-steps li {
+  margin-bottom: var(--space-3);
+}
+
+.deshret-purge-warning {
+  margin-top: var(--space-4);
+  border-color: rgba(199, 62, 62, 0.45);
+}
+
+.deshret-reclass-table td:first-child {
+  color: var(--text-gold);
+  white-space: nowrap;
+}
+
+.deshret-compiler-panel {
+  border-top: 2px solid rgba(107, 91, 149, 0.35);
+}
+
+.deshret-json-block {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-4);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  color: #a8e6cf;
+}
+
+.deshret-json-block code {
+  font-family: inherit;
+}
