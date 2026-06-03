@@ -5300,3 +5300,144 @@ body.wd-is-decrypted .wd-site-header h1 {
 .deshret-json-block code {
   font-family: inherit;
 }
+
+/* --- 8-System suite (origin-matrix, camera, shared) --- */
+.eight-system-page .eight-system-header {
+  border-bottom: 2px solid rgba(56, 189, 248, 0.35);
+}
+
+.eight-system-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(8, 20, 32, 0.45);
+}
+
+.eight-system-stamp p {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.eight-system-stamp p + p {
+  margin-top: var(--space-2);
+  color: #7dd3fc;
+}
+
+.classification-eight-system {
+  color: #7dd3fc;
+}
+
+.classification-camera {
+  color: #6ee7b7;
+}
+
+.eight-system-log {
+  margin: var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  border-left: 3px solid rgba(56, 189, 248, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.eight-system-callout {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-4);
+  border: 1px dashed rgba(107, 91, 149, 0.45);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.eight-system-callout-label {
+  margin: 0 0 var(--space-2);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: #9b8ec4;
+}
+
+.eight-system-callout p:last-child {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.eight-system-json-panel {
+  border-top: 2px solid rgba(56, 189, 248, 0.25);
+}
+
+.eight-system-json {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-4);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  background: #080808;
+  border: 1px solid var(--dgy-border);
+  color: #a8e6cf;
+}
+
+.math-block {
+  margin: var(--space-4) 0;
+  padding: var(--space-3);
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--dgy-border);
+}
+
+.math-block-result {
+  border-color: rgba(110, 231, 183, 0.35);
+}
+
+.camera-premise-panel {
+  border-left: 3px solid #6ee7b7;
+}
+
+.camera-matrix-panel {
+  border-left: 3px solid rgba(56, 189, 248, 0.45);
+}
+
+.camera-output-panel {
+  border-left: 3px solid var(--dgy-amber-dim);
+}
+
+.camera-di-table td {
+  vertical-align: middle;
+}
+
+.camera-sign-plus {
+  color: #4ade80;
+}
+
+.camera-sign-minus {
+  color: #f87171;
+}
+
+.camera-di-legend {
+  margin: var(--space-3) 0 0;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.camera-di-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  opacity: 0.65;
+}
+
+.camera-di-arrow {
+  padding: var(--space-1) var(--space-2);
+  border: 1px dashed var(--dgy-border);
+}
+
+.camera-ops-dl {
+  margin-top: var(--space-4);
+}
+
+.origin-page .eight-system-hub-note {
+  border-left: 3px solid #7dd3fc;
+}

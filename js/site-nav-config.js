@@ -3,7 +3,7 @@
  * required links without updating .cursor/rules/darglarking-yellow-wiki.mdc
  *
  * Single source of truth for js/site-nav.js on every page.
- * NAV_CONFIG_VERSION=11 — bump HTML ?v= when this list changes.
+ * NAV_CONFIG_VERSION=12 — bump HTML ?v= when this list changes.
  */
 (function (global) {
   "use strict";
@@ -12,6 +12,8 @@
     { href: "index.html", label: "Main Page", required: true },
     { href: "doctrine.html", label: "Doctrine", required: true },
     { href: "principles.html", label: "Principles", required: true },
+    { href: "origin-matrix.html", label: "Origin", required: true },
+    { href: "camera.html", label: "Camera", required: true },
     { href: "simulation-theory.html", label: "Simulation", required: true },
     { href: "frames.html", label: "Frames", required: true },
     { href: "registry.html", label: "Registry", required: true },
