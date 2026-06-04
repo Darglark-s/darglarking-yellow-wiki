@@ -5712,3 +5712,135 @@ body.wd-is-decrypted .wd-site-header h1 {
 .external-parallel-index li + li {
   margin-top: var(--space-2);
 }
+
+.article-card-capstone {
+  border-color: rgba(240, 171, 252, 0.45);
+  background: linear-gradient(135deg, rgba(30, 15, 45, 0.55) 0%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.article-card-capstone h3 {
+  color: #f0abfc;
+}
+
+/* --- Internalized 8 System capstone --- */
+.classification-eight-system-capstone {
+  color: #f0abfc;
+}
+
+.eight-system-capstone-header {
+  border-bottom-color: rgba(240, 171, 252, 0.4);
+}
+
+.eight-system-capstone-hub {
+  border-left: 3px solid #f0abfc;
+}
+
+.eight-system-capstone-dl {
+  margin: var(--space-4) 0 0;
+}
+
+.eight-system-capstone-dl > div {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--dgy-border);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.eight-system-capstone-dl dt {
+  margin: 0 0 var(--space-2);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #f0abfc;
+}
+
+.eight-system-capstone-dl dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.eight-system-geometry-panel {
+  border-left: 3px solid rgba(125, 211, 252, 0.45);
+}
+
+.figure-eight-diagram {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 var(--space-5);
+  padding: var(--space-4);
+  border: 1px dashed rgba(240, 171, 252, 0.35);
+  background: rgba(20, 10, 30, 0.45);
+  text-align: center;
+}
+
+.figure-eight-loop {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--dgy-border);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.figure-eight-upper {
+  border-left: 3px solid #7dd3fc;
+}
+
+.figure-eight-lower {
+  border-left: 3px solid #6ee7b7;
+}
+
+.figure-eight-loop-label {
+  margin: 0 0 var(--space-2);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.figure-eight-loop p:last-child {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.figure-eight-crossover {
+  padding: var(--space-3);
+  border: 2px solid rgba(240, 171, 252, 0.5);
+  background: rgba(40, 20, 60, 0.5);
+}
+
+.figure-eight-crossover p {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.figure-eight-crossover p + p {
+  margin-top: var(--space-1);
+  color: var(--text-muted);
+}
+
+.eight-system-immune-panel {
+  border-left: 3px solid rgba(248, 113, 113, 0.4);
+}
+
+.eight-system-immune-sequence {
+  margin: var(--space-4) 0 0;
+  padding-left: 1.4rem;
+  line-height: 1.65;
+}
+
+.eight-system-immune-sequence li {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dotted rgba(90, 90, 90, 0.3);
+}
+
+.eight-system-immune-sequence li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.eight-system-immune-sequence .source-tag {
+  display: block;
+  margin-top: var(--space-2);
+}
