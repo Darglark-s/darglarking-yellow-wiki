@@ -10,6 +10,7 @@
     { href: "doctrine.html", label: "Doctrine", required: true },
     { href: "principles.html", label: "Principles", required: true },
     { href: "origin-matrix.html", label: "Origin", required: true },
+    { href: "architecture.html", label: "Architecture", required: true },
     { href: "camera.html", label: "Camera", required: true },
     { href: "simulation-theory.html", label: "Simulation", required: true },
     { href: "frames.html", label: "Frames", required: true },
@@ -156,7 +157,7 @@
     });
 
     nav.dataset.navCount = String(links.length);
-    nav.dataset.navVersion = "12";
+    nav.dataset.navVersion = "13";
   }
 
   if (document.readyState === "loading") {
