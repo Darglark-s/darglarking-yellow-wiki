@@ -5620,3 +5620,95 @@ body.wd-is-decrypted .wd-site-header h1 {
 .architecture-code-list li + li {
   margin-top: var(--space-2);
 }
+
+/* --- External parallel notes (non-canon, sovereignty disclaimer) --- */
+.external-parallel-panel {
+  margin-top: var(--layout-section-gap);
+  border: 1px dashed rgba(120, 120, 120, 0.45);
+  border-left: 3px solid rgba(120, 120, 120, 0.55);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.external-parallel-stamp {
+  margin: calc(-1 * var(--layout-panel-pad)) calc(-1 * var(--layout-panel-pad)) var(--space-4);
+  padding: var(--space-2) var(--layout-panel-pad);
+  border-bottom: 1px dashed rgba(120, 120, 120, 0.35);
+  background: rgba(20, 20, 20, 0.6);
+}
+
+.external-parallel-stamp p {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: #888;
+}
+
+.external-parallel-panel > h2 {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.external-parallel-sovereignty {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid rgba(90, 90, 90, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.external-parallel-entry {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px dotted rgba(90, 90, 90, 0.35);
+}
+
+.external-parallel-entry:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.external-parallel-entry h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 0.92rem;
+  color: #aaa;
+}
+
+.external-parallel-entry p {
+  margin: 0 0 var(--space-3);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.external-parallel-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.external-parallel-entry dt {
+  margin: var(--space-3) 0 var(--space-1);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: #777;
+}
+
+.external-parallel-entry dd {
+  margin: 0 0 var(--space-2);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.external-parallel-index {
+  margin: var(--space-3) 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.external-parallel-index li + li {
+  margin-top: var(--space-2);
+}
