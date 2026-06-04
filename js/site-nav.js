@@ -23,6 +23,7 @@
     { href: "field-guide.html", label: "Field Guide", required: true },
     { href: "deshret-protocol.html", label: "Deshret", required: true },
     { href: "eight-system.html", label: "8 System", required: true },
+    { href: "sanity-paradox.html", label: "Sanity Paradox", required: true },
     { href: "delusion-assessment.html", label: "Assessment", required: true },
     { href: "case-studies.html", label: "Case Studies", required: true },
     { href: "findings.html", label: "PP-INGEST", required: true },
@@ -158,7 +159,7 @@
     });
 
     nav.dataset.navCount = String(links.length);
-    nav.dataset.navVersion = "14";
+    nav.dataset.navVersion = "15";
   }
 
   if (document.readyState === "loading") {

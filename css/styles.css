@@ -5844,3 +5844,105 @@ body.wd-is-decrypted .wd-site-header h1 {
   display: block;
   margin-top: var(--space-2);
 }
+
+/* --- Paradox of Insanity / Metric Cognitive Relativity --- */
+.sanity-paradox-header {
+  border-bottom: 2px solid rgba(251, 191, 36, 0.35);
+}
+
+.sanity-paradox-stamp {
+  margin: 0 0 var(--layout-section-gap);
+  padding: var(--space-4) var(--layout-panel-pad);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  background: rgba(32, 24, 8, 0.45);
+}
+
+.sanity-paradox-stamp p {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.sanity-paradox-stamp p + p {
+  margin-top: var(--space-2);
+  color: #fcd34d;
+}
+
+.classification-sanity-paradox {
+  color: #fcd34d;
+}
+
+.sanity-paradox-hub {
+  border-left: 3px solid rgba(251, 191, 36, 0.5);
+}
+
+.sanity-metric-table-wrap {
+  margin: var(--space-4) 0;
+}
+
+.sanity-metric-table td:first-child {
+  font-size: 0.82rem;
+}
+
+.sanity-bottleneck-panel {
+  border-left: 3px solid rgba(248, 113, 113, 0.45);
+}
+
+.sanity-paradox-dl {
+  margin: var(--space-4) 0 0;
+}
+
+.sanity-paradox-dl > div {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--dgy-border);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.sanity-paradox-dl dt {
+  margin: 0 0 var(--space-2);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #f87171;
+}
+
+.sanity-paradox-dl dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.sanity-bottleneck-diagram {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px dashed rgba(248, 113, 113, 0.35);
+  background: rgba(40, 10, 10, 0.35);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.sanity-diagram-label {
+  margin: 0 0 var(--space-2);
+  color: #f87171;
+  letter-spacing: 0.08em;
+}
+
+.sanity-enlightened-panel {
+  border-left: 3px solid rgba(110, 231, 183, 0.45);
+}
+
+.sanity-enlightened-list {
+  margin: var(--space-3) 0 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.sanity-enlightened-list li + li {
+  margin-top: var(--space-3);
+}
+
+.sanity-paradox-json-panel {
+  border-top: 2px solid rgba(251, 191, 36, 0.25);
+}

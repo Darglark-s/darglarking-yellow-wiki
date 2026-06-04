@@ -3,7 +3,7 @@
  * required links without updating .cursor/rules/darglarking-yellow-wiki.mdc
  *
  * Single source of truth for js/site-nav.js on every page.
- * NAV_CONFIG_VERSION=14 — bump HTML ?v= when this list changes.
+ * NAV_CONFIG_VERSION=15 — bump HTML ?v= when this list changes.
  */
 (function (global) {
   "use strict";
@@ -26,6 +26,7 @@
     { href: "field-guide.html", label: "Field Guide", required: true },
     { href: "deshret-protocol.html", label: "Deshret", required: true },
     { href: "eight-system.html", label: "8 System", required: true },
+    { href: "sanity-paradox.html", label: "Sanity Paradox", required: true },
     { href: "delusion-assessment.html", label: "Assessment", required: true },
     { href: "case-studies.html", label: "Case Studies", required: true },
     { href: "findings.html", label: "PP-INGEST", required: true },
